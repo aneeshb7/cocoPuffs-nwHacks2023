@@ -20,8 +20,8 @@ export default {
         return _db
     },
 
-    getLoginDb: function() {
-        return _db.db("login");
+    getLocationDb: function() {
+        return _db.db("locations");
     },
 
     getUsersDb: function() {

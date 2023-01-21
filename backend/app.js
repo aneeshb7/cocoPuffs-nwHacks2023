@@ -2,6 +2,7 @@ import express from 'express';
 import * as dotenv from "dotenv";
 import cors from 'cors';
 import mongoUtil from './db/mongoutil.js';
+import locationRouter from './routes/locations.js';
 
 dotenv.config();
 const app = express();
@@ -25,3 +26,5 @@ app.get('/', (req, res) => {
 app.get('/ping', (req, res) => {
     res.send('pong');
 });
+
+app.use('/locations', locationRouter)
