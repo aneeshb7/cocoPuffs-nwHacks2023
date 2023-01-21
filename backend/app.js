@@ -26,6 +26,8 @@ app.get('/ping', (req, res) => {
     res.send('pong');
 });
 
+app.use('/locations', locationRouter)
+
 import { NlpManager } from "node-nlp";
 console.log("Starting Chatbot ...");
 const manager = new NlpManager({ languages: ["en"] });
