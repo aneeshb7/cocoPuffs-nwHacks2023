@@ -2,6 +2,7 @@ import express from 'express';
 import * as dotenv from "dotenv";
 import cors from 'cors';
 import mongoUtil from './db/mongoutil.js';
+import locationRouter from './routes/locations.js';
 
 dotenv.config();
 const app = express();
@@ -27,7 +28,6 @@ app.get('/ping', (req, res) => {
 });
 
 app.use('/locations', locationRouter)
-
 import { NlpManager } from "node-nlp";
 console.log("Starting Chatbot ...");
 const manager = new NlpManager({ languages: ["en"] });
@@ -47,4 +47,4 @@ rl.on("line", async function (line) {
   rl.prompt();
 }).on("close", function () {
   process.exit(0);
-});
+})
