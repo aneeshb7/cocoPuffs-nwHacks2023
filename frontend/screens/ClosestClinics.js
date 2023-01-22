@@ -5,7 +5,7 @@ import styles from '../styles/StyleSheet';
 
 export default function ClosestClinics(props) {
 
-  return props.isLoading && !props.locations ? (
+  return props.isLoading && props.locations.length == 0 ? (
     <View style={styles.container}>
       <ActivityIndicator size="large" />
     </View>

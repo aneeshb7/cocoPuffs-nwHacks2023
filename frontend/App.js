@@ -13,6 +13,10 @@ export default function App() {
   const [location, setLocation] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const [daysSober, setDaysSober] = useState(0);
+  const [milestones, setMilestones] = useState([]);
+  const [newMilestone, setNewMilestone] = useState('');
+
   useEffect(() => {
     async function fetchData(coordinates) {
       const locations = await controller.getLocationWithDistance(coordinates);
@@ -38,7 +42,14 @@ export default function App() {
 
   const ClosestClinicsRoute = () => <ClosestClinics locations={locations} isLoading={isLoading} />;
   const ChatScreenRoute = () => <ChatScreen />;
-  const ProgressTrackerRoute = () => <ProgressTracker />;
+  const ProgressTrackerRoute = () => <ProgressTracker 
+                                        daysSober={daysSober} 
+                                        setDaysSober={setDaysSober} 
+                                        milestones={milestones} 
+                                        setMilestones={setMilestones} 
+                                        newMilestone={newMilestone} 
+                                        setNewMilestone={setNewMilestone}
+                                      />;
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([

@@ -3,11 +3,7 @@ import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import styles from '../styles/StyleSheet';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function ProgressTracker() {
-    const [daysSober, setDaysSober] = useState(0);
-    const [milestones, setMilestones] = useState([]);
-    const [newMilestone, setNewMilestone] = useState('');
-
+export default function ProgressTracker({daysSober, setDaysSober, milestones, setMilestones, newMilestone, setNewMilestone}) {
     const incrementDaysSober = () => {
         setDaysSober(daysSober + 1);
     }
