@@ -9,26 +9,17 @@
     "web": "expo start --web"
   },
   "dependencies": {
-<<<<<<< Updated upstream
     "@expo/webpack-config": "^0.17.2",
     "@react-navigation/native": "^6.1.2",
     "@react-navigation/stack": "^6.3.11",
     "expo": "~47.0.12",
-=======
-    "@expo/webpack-config": "^0.16.19",
-    "expo": "^1.0.0",
->>>>>>> Stashed changes
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
-<<<<<<< Updated upstream
     "react-native-web": "~0.18.9",
-    "react-navigation-stack": "^2.10.4"
-=======
-    "react-native-location": "^2.5.0",
-    "react-native-web": "~0.18.9"
->>>>>>> Stashed changes
+    "react-navigation-stack": "^2.10.4",
+    "react-native-location": "^2.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

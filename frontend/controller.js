@@ -1,9 +1,9 @@
+ const url = 'http://10.19.129.45:3000'
+
 const controller = {
     getAllLocations: async function() {
         try {
-            const response = await fetch(
-                `http://10.19.129.45:3000/locations/get-all`,
-            );
+            const response = await fetch(`${url}/locations/get-all`);
             const json = await response.json();
             return json;
         } catch (error) {
@@ -12,7 +12,7 @@ const controller = {
     },
     
     getLocationsByCoordinates: async function(coordinates, radius) {
-        const response = await fetch(url + '/locations/coordinates?userCoordinates=' + coordinates + '&locationRadius=' + radius);
+        const response = await fetch(`${url}/locations/get-all`);
         const locations = await response.json();
         return locations;
     }
