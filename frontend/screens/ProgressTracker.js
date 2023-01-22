@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
 
-export default function ProgressTracker({ navigation }) {
+export default function ProgressTracker() {
     const [daysSober, setDaysSober] = useState(0);
     const [milestones, setMilestones] = useState([]);
     const [newMilestone, setNewMilestone] = useState('');

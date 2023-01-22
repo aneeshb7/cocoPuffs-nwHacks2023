@@ -6,7 +6,7 @@ import styles from '../styles/StyleSheet';
 import controller from '../controller.js';
 import * as Location from 'expo-location';
 
-export default function ClosestClinics({navigation}) {
+export default function ClosestClinics() {
 
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState(null);
@@ -41,7 +41,13 @@ export default function ClosestClinics({navigation}) {
     </View>
   ) : (
     <View containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0, flex: 1 }}>
-      <Text style={styles.title}>Clinics Near Me</Text>
+      <View style={{flexDirection: 'row', alignItems: 'center', paddingTop: 60}}>
+        <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
+        <View>
+          <Text style={styles.title}> Clinics Near Me </Text>
+        </View>
+        <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
+      </View>
       <FlatList     
         data={locations}          
         renderItem={function({ item }) { 
@@ -52,14 +58,6 @@ export default function ClosestClinics({navigation}) {
               right={() => (<Text style={styles.distance}>{`${Math.round(item.distance)} km`}</Text>)}
             />          
         )}}                        
-      />
-      <Button
-        title="Chat"
-        onPress={() => navigation.navigate('ChatScreen')}
-      />
-      <Button
-        title='Progress Tracker'
-        onPress={() => navigation.navigate('ProgressTracker')}
       />
     </View>
   )

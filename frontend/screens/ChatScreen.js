@@ -8,7 +8,7 @@ import controller from '../controller';
 import uuid from 'react-native-uuid';
 
 
-export default function ChatScreen({navigation}) {
+export default function ChatScreen() {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
