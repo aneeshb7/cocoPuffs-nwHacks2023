@@ -34,92 +34,511 @@
           "useStemDict": true
         },
         "stemDict": {
-          "goodby": {
-            "intent": "greetings.bye",
+          "hi": {
+            "intent": "greeting",
             "domain": "default"
           },
-          "bye,care,take": {
-            "intent": "greetings.bye",
+          "hey": {
+            "intent": "greeting",
             "domain": "default"
           },
-          "later,see,you": {
-            "intent": "greetings.bye",
-            "domain": "default"
-          },
-          "bye,for,now": {
-            "intent": "greetings.bye",
-            "domain": "default"
-          },
-          "go,i,must": {
-            "intent": "greetings.bye",
+          "anyon,is,there": {
+            "intent": "greeting",
             "domain": "default"
           },
           "hello": {
-            "intent": "greetings.hello",
+            "intent": "greeting",
             "domain": "default"
           },
-          "hi": {
-            "intent": "greetings.hello",
+          "hay": {
+            "intent": "greeting",
             "domain": "default"
           },
-          "howdi": {
-            "intent": "greetings.hello",
+          "bye": {
+            "intent": "goodbye",
             "domain": "default"
           },
-          "greet": {
-            "intent": "greetings.hello",
+          "later,see,you": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "help,is,that": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "for,help,thank,the": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "about",
+            "domain": "default"
+          },
+          "are,what,you": {
+            "intent": "about",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "name",
+            "domain": "default"
+          },
+          "call,i,should,what,you": {
+            "intent": "name",
+            "domain": "default"
+          },
+          "name,what,your": {
+            "intent": "name",
+            "domain": "default"
+          },
+          "could,help,me,you": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "a,give,hand,me,pleas": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "can,help,you": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "can,do,for,me,what,you": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "a,i,need,support": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "a,help,i,need": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "me,pleas,support": {
+            "intent": "help",
+            "domain": "default"
+          },
+          "addict,am,i,think,to": {
+            "intent": "addiction",
+            "domain": "default"
+          },
+          "addict": {
+            "intent": "addiction",
+            "domain": "default"
+          },
+          "addict,am,i,to": {
+            "intent": "addiction",
+            "domain": "default"
+          },
+          "addict,am,i,struggl,with": {
+            "intent": "addiction",
+            "domain": "default"
+          },
+          "am,depress,i": {
+            "intent": "depression",
+            "domain": "default"
+          },
+          "am,depress,feel,i": {
+            "intent": "depression",
+            "domain": "default"
+          },
+          "am,depress,i,struggl,with": {
+            "intent": "depression",
+            "domain": "default"
+          },
+          "suicid": {
+            "intent": "depression",
+            "domain": "default"
+          },
+          "kill,myself": {
+            "intent": "depression",
+            "domain": "default"
+          },
+          "i,need,support": {
+            "intent": "support",
+            "domain": "default"
+          },
+          "i,need,someon,talk,to": {
+            "intent": "support",
+            "domain": "default"
+          },
+          "overdos": {
+            "intent": "overdose",
+            "domain": "default"
+          },
+          "friend,is,my,overdos": {
+            "intent": "overdose",
+            "domain": "default"
+          },
+          "an,case,do,i,in,of,overdos,what": {
+            "intent": "overdose",
+            "domain": "default"
+          },
+          "i,quit,smoke,to,want": {
+            "intent": "quit_substance",
+            "domain": "default"
+          },
+          "drink,i,quit,to,want": {
+            "intent": "quit_substance",
+            "domain": "default"
+          },
+          "drug,i,quit,to,use,want": {
+            "intent": "quit_substance",
+            "domain": "default"
+          },
+          "afraid,am,i,of,relaps": {
+            "intent": "relapse_prevention",
+            "domain": "default"
+          },
+          "can,how,i,prevent,relaps": {
+            "intent": "relapse_prevention",
+            "domain": "default"
+          },
+          "about,i,learn,prevent,relaps,to,want": {
+            "intent": "relapse_prevention",
+            "domain": "default"
+          },
+          "am,health,i,mental,my,struggl,with": {
+            "intent": "mental_health",
+            "domain": "default"
+          },
+          "health,help,i,mental,my,need,with": {
+            "intent": "mental_health",
+            "domain": "default"
+          },
+          "about,health,i,mental,my,talk,to,want": {
+            "intent": "mental_health",
+            "domain": "default"
+          },
+          "a,am,for,group,i,look,support": {
+            "intent": "find_support_group",
+            "domain": "default"
+          },
+          "a,can,find,group,i,support,where": {
+            "intent": "find_support_group",
+            "domain": "default"
+          },
+          "a,group,i,join,support,to,want": {
+            "intent": "find_support_group",
+            "domain": "default"
+          },
+          "am,feel,i,stress": {
+            "intent": "coping_with_stress",
+            "domain": "default"
+          },
+          "cope,help,i,need,stress,with": {
+            "intent": "coping_with_stress",
+            "domain": "default"
+          },
+          "can,deal,how,i,stress,with": {
+            "intent": "coping_with_stress",
             "domain": "default"
           }
         },
         "intentDict": {
-          "greetings.bye": "default",
-          "greetings.hello": "default"
+          "greeting": "default",
+          "goodbye": "default",
+          "thanks": "default",
+          "about": "default",
+          "name": "default",
+          "help": "default",
+          "addiction": "default",
+          "depression": "default",
+          "support": "default",
+          "overdose": "default",
+          "quit_substance": "default",
+          "relapse_prevention": "default",
+          "mental_health": "default",
+          "find_support_group": "default",
+          "coping_with_stress": "default"
         },
         "sentences": [
           {
             "domain": "default",
-            "utterance": "goodbye",
-            "intent": "greetings.bye"
+            "utterance": "Hi",
+            "intent": "greeting"
           },
           {
             "domain": "default",
-            "utterance": "bye take care",
-            "intent": "greetings.bye"
+            "utterance": "Hey",
+            "intent": "greeting"
           },
           {
             "domain": "default",
-            "utterance": "see you later",
-            "intent": "greetings.bye"
+            "utterance": "Is anyone there?",
+            "intent": "greeting"
           },
           {
             "domain": "default",
-            "utterance": "bye for now",
-            "intent": "greetings.bye"
+            "utterance": "Hello",
+            "intent": "greeting"
           },
           {
             "domain": "default",
-            "utterance": "i must go",
-            "intent": "greetings.bye"
+            "utterance": "Hay",
+            "intent": "greeting"
           },
           {
             "domain": "default",
-            "utterance": "hello",
-            "intent": "greetings.hello"
+            "utterance": "Bye",
+            "intent": "goodbye"
           },
           {
             "domain": "default",
-            "utterance": "hi",
-            "intent": "greetings.hello"
+            "utterance": "See you later",
+            "intent": "goodbye"
           },
           {
             "domain": "default",
-            "utterance": "howdy",
-            "intent": "greetings.hello"
+            "utterance": "Goodbye",
+            "intent": "goodbye"
           },
           {
             "domain": "default",
-            "utterance": "Greetings",
-            "intent": "greetings.hello"
+            "utterance": "Thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "That's helpful",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Thanks for the help",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Who are you?",
+            "intent": "about"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are you?",
+            "intent": "about"
+          },
+          {
+            "domain": "default",
+            "utterance": "Who you are?",
+            "intent": "about"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is your name",
+            "intent": "name"
+          },
+          {
+            "domain": "default",
+            "utterance": "what should I call you",
+            "intent": "name"
+          },
+          {
+            "domain": "default",
+            "utterance": "whats your name?",
+            "intent": "name"
+          },
+          {
+            "domain": "default",
+            "utterance": "Could you help me?",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me a hand please",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you help?",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can you do for me?",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need a support",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need a help",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "support me please",
+            "intent": "help"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think I am addicted to",
+            "intent": "addiction"
+          },
+          {
+            "domain": "default",
+            "utterance": "addiction",
+            "intent": "addiction"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am addicted to",
+            "intent": "addiction"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am struggling with addiction",
+            "intent": "addiction"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am depressed",
+            "intent": "depression"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am feeling depressed",
+            "intent": "depression"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am struggling with depression",
+            "intent": "depression"
+          },
+          {
+            "domain": "default",
+            "utterance": "suicide",
+            "intent": "depression"
+          },
+          {
+            "domain": "default",
+            "utterance": "kill myself",
+            "intent": "depression"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need support",
+            "intent": "support"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need someone to talk to",
+            "intent": "support"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need someone to talk to",
+            "intent": "support"
+          },
+          {
+            "domain": "default",
+            "utterance": "overdose",
+            "intent": "overdose"
+          },
+          {
+            "domain": "default",
+            "utterance": "My friend is overdosing",
+            "intent": "overdose"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do I do in case of an overdose",
+            "intent": "overdose"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to quit smoking",
+            "intent": "quit_substance"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to quit drinking",
+            "intent": "quit_substance"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to quit using drugs",
+            "intent": "quit_substance"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm afraid of relapsing",
+            "intent": "relapse_prevention"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I prevent relapsing",
+            "intent": "relapse_prevention"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to learn about relapse prevention",
+            "intent": "relapse_prevention"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm struggling with my mental health",
+            "intent": "mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need help with my mental health",
+            "intent": "mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to talk about my mental health",
+            "intent": "mental_health"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm looking for a support group",
+            "intent": "find_support_group"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where can I find a support group",
+            "intent": "find_support_group"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to join a support group",
+            "intent": "find_support_group"
+          },
+          {
+            "domain": "default",
+            "utterance": "I'm feeling stressed",
+            "intent": "coping_with_stress"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need help coping with stress",
+            "intent": "coping_with_stress"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I deal with stress",
+            "intent": "coping_with_stress"
           }
         ],
         "domains": {
@@ -136,97 +555,559 @@
               "log": true
             },
             "features": {
-              "goodby": 1,
+              "hi": 1,
+              "hey": 1,
+              "is": 1,
+              "anyon": 1,
+              "there": 1,
+              "hello": 1,
+              "hay": 1,
               "bye": 1,
-              "take": 1,
-              "care": 1,
               "see": 1,
               "you": 1,
               "later": 1,
+              "goodby": 1,
+              "thank": 1,
+              "that": 1,
+              "help": 1,
               "for": 1,
-              "now": 1,
+              "the": 1,
+              "who": 1,
+              "are": 1,
+              "what": 1,
+              "your": 1,
+              "name": 1,
+              "should": 1,
               "i": 1,
-              "must": 1,
-              "go": 1,
-              "hello": 1,
-              "hi": 1,
-              "howdi": 1,
-              "greet": 1
+              "call": 1,
+              "could": 1,
+              "me": 1,
+              "give": 1,
+              "a": 1,
+              "hand": 1,
+              "pleas": 1,
+              "can": 1,
+              "do": 1,
+              "need": 1,
+              "support": 1,
+              "think": 1,
+              "am": 1,
+              "addict": 1,
+              "to": 1,
+              "struggl": 1,
+              "with": 1,
+              "depress": 1,
+              "feel": 1,
+              "suicid": 1,
+              "kill": 1,
+              "myself": 1,
+              "someon": 1,
+              "talk": 1,
+              "overdos": 1,
+              "my": 1,
+              "friend": 1,
+              "in": 1,
+              "case": 1,
+              "of": 1,
+              "an": 1,
+              "want": 1,
+              "quit": 1,
+              "smoke": 1,
+              "drink": 1,
+              "use": 1,
+              "drug": 1,
+              "afraid": 1,
+              "relaps": 1,
+              "how": 1,
+              "prevent": 1,
+              "learn": 1,
+              "about": 1,
+              "mental": 1,
+              "health": 1,
+              "look": 1,
+              "group": 1,
+              "where": 1,
+              "find": 1,
+              "join": 1,
+              "stress": 1,
+              "cope": 1,
+              "deal": 1
             },
             "intents": {
-              "greetings.bye": 1,
-              "greetings.hello": 1
+              "greeting": 1,
+              "goodbye": 1,
+              "thanks": 1,
+              "about": 1,
+              "name": 1,
+              "help": 1,
+              "addiction": 1,
+              "depression": 1,
+              "support": 1,
+              "overdose": 1,
+              "quit_substance": 1,
+              "relapse_prevention": 1,
+              "mental_health": 1,
+              "find_support_group": 1,
+              "coping_with_stress": 1
             },
             "intentFeatures": {
-              "greetings.bye": {
-                "goodby": 1,
+              "greeting": {
+                "hi": 1,
+                "hey": 1,
+                "is": 1,
+                "anyon": 1,
+                "there": 1,
+                "hello": 1,
+                "hay": 1
+              },
+              "goodbye": {
                 "bye": 1,
-                "take": 1,
-                "care": 1,
                 "see": 1,
                 "you": 1,
                 "later": 1,
-                "for": 1,
-                "now": 1,
-                "i": 1,
-                "must": 1,
-                "go": 1
+                "goodby": 1
               },
-              "greetings.hello": {
-                "hello": 1,
-                "hi": 1,
-                "howdi": 1,
-                "greet": 1
+              "thanks": {
+                "thank": 1,
+                "you": 1,
+                "that": 1,
+                "is": 1,
+                "help": 1,
+                "for": 1,
+                "the": 1
+              },
+              "about": {
+                "who": 1,
+                "are": 1,
+                "you": 1,
+                "what": 1
+              },
+              "name": {
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1,
+                "should": 1,
+                "i": 1,
+                "call": 1,
+                "you": 1
+              },
+              "help": {
+                "could": 1,
+                "you": 1,
+                "help": 1,
+                "me": 1,
+                "give": 1,
+                "a": 1,
+                "hand": 1,
+                "pleas": 1,
+                "can": 1,
+                "what": 1,
+                "do": 1,
+                "for": 1,
+                "i": 1,
+                "need": 1,
+                "support": 1
+              },
+              "addiction": {
+                "i": 1,
+                "think": 1,
+                "am": 1,
+                "addict": 1,
+                "to": 1,
+                "struggl": 1,
+                "with": 1
+              },
+              "depression": {
+                "i": 1,
+                "am": 1,
+                "depress": 1,
+                "feel": 1,
+                "struggl": 1,
+                "with": 1,
+                "suicid": 1,
+                "kill": 1,
+                "myself": 1
+              },
+              "support": {
+                "i": 1,
+                "need": 1,
+                "support": 1,
+                "someon": 1,
+                "to": 1,
+                "talk": 1
+              },
+              "overdose": {
+                "overdos": 1,
+                "my": 1,
+                "friend": 1,
+                "is": 1,
+                "what": 1,
+                "do": 1,
+                "i": 1,
+                "in": 1,
+                "case": 1,
+                "of": 1,
+                "an": 1
+              },
+              "quit_substance": {
+                "i": 1,
+                "want": 1,
+                "to": 1,
+                "quit": 1,
+                "smoke": 1,
+                "drink": 1,
+                "use": 1,
+                "drug": 1
+              },
+              "relapse_prevention": {
+                "i": 1,
+                "am": 1,
+                "afraid": 1,
+                "of": 1,
+                "relaps": 1,
+                "how": 1,
+                "can": 1,
+                "prevent": 1,
+                "want": 1,
+                "to": 1,
+                "learn": 1,
+                "about": 1
+              },
+              "mental_health": {
+                "i": 1,
+                "am": 1,
+                "struggl": 1,
+                "with": 1,
+                "my": 1,
+                "mental": 1,
+                "health": 1,
+                "need": 1,
+                "help": 1,
+                "want": 1,
+                "to": 1,
+                "talk": 1,
+                "about": 1
+              },
+              "find_support_group": {
+                "i": 1,
+                "am": 1,
+                "look": 1,
+                "for": 1,
+                "a": 1,
+                "support": 1,
+                "group": 1,
+                "where": 1,
+                "can": 1,
+                "find": 1,
+                "want": 1,
+                "to": 1,
+                "join": 1
+              },
+              "coping_with_stress": {
+                "i": 1,
+                "am": 1,
+                "feel": 1,
+                "stress": 1,
+                "need": 1,
+                "help": 1,
+                "cope": 1,
+                "with": 1,
+                "how": 1,
+                "can": 1,
+                "deal": 1
               }
             },
             "featuresToIntent": {
-              "goodby": [
-                "greetings.bye"
+              "hi": [
+                "greeting"
               ],
-              "bye": [
-                "greetings.bye"
+              "hey": [
+                "greeting"
               ],
-              "take": [
-                "greetings.bye"
+              "is": [
+                "greeting",
+                "thanks",
+                "name",
+                "overdose"
               ],
-              "care": [
-                "greetings.bye"
+              "anyon": [
+                "greeting"
               ],
-              "see": [
-                "greetings.bye"
-              ],
-              "you": [
-                "greetings.bye"
-              ],
-              "later": [
-                "greetings.bye"
-              ],
-              "for": [
-                "greetings.bye"
-              ],
-              "now": [
-                "greetings.bye"
-              ],
-              "i": [
-                "greetings.bye"
-              ],
-              "must": [
-                "greetings.bye"
-              ],
-              "go": [
-                "greetings.bye"
+              "there": [
+                "greeting"
               ],
               "hello": [
-                "greetings.hello"
+                "greeting"
               ],
-              "hi": [
-                "greetings.hello"
+              "hay": [
+                "greeting"
               ],
-              "howdi": [
-                "greetings.hello"
+              "bye": [
+                "goodbye"
               ],
-              "greet": [
-                "greetings.hello"
+              "see": [
+                "goodbye"
+              ],
+              "you": [
+                "goodbye",
+                "thanks",
+                "about",
+                "name",
+                "help"
+              ],
+              "later": [
+                "goodbye"
+              ],
+              "goodby": [
+                "goodbye"
+              ],
+              "thank": [
+                "thanks"
+              ],
+              "that": [
+                "thanks"
+              ],
+              "help": [
+                "thanks",
+                "help",
+                "mental_health",
+                "coping_with_stress"
+              ],
+              "for": [
+                "thanks",
+                "help",
+                "find_support_group"
+              ],
+              "the": [
+                "thanks"
+              ],
+              "who": [
+                "about"
+              ],
+              "are": [
+                "about"
+              ],
+              "what": [
+                "about",
+                "name",
+                "help",
+                "overdose"
+              ],
+              "your": [
+                "name"
+              ],
+              "name": [
+                "name"
+              ],
+              "should": [
+                "name"
+              ],
+              "i": [
+                "name",
+                "help",
+                "addiction",
+                "depression",
+                "support",
+                "overdose",
+                "quit_substance",
+                "relapse_prevention",
+                "mental_health",
+                "find_support_group",
+                "coping_with_stress"
+              ],
+              "call": [
+                "name"
+              ],
+              "could": [
+                "help"
+              ],
+              "me": [
+                "help"
+              ],
+              "give": [
+                "help"
+              ],
+              "a": [
+                "help",
+                "find_support_group"
+              ],
+              "hand": [
+                "help"
+              ],
+              "pleas": [
+                "help"
+              ],
+              "can": [
+                "help",
+                "relapse_prevention",
+                "find_support_group",
+                "coping_with_stress"
+              ],
+              "do": [
+                "help",
+                "overdose"
+              ],
+              "need": [
+                "help",
+                "support",
+                "mental_health",
+                "coping_with_stress"
+              ],
+              "support": [
+                "help",
+                "support",
+                "find_support_group"
+              ],
+              "think": [
+                "addiction"
+              ],
+              "am": [
+                "addiction",
+                "depression",
+                "relapse_prevention",
+                "mental_health",
+                "find_support_group",
+                "coping_with_stress"
+              ],
+              "addict": [
+                "addiction"
+              ],
+              "to": [
+                "addiction",
+                "support",
+                "quit_substance",
+                "relapse_prevention",
+                "mental_health",
+                "find_support_group"
+              ],
+              "struggl": [
+                "addiction",
+                "depression",
+                "mental_health"
+              ],
+              "with": [
+                "addiction",
+                "depression",
+                "mental_health",
+                "coping_with_stress"
+              ],
+              "depress": [
+                "depression"
+              ],
+              "feel": [
+                "depression",
+                "coping_with_stress"
+              ],
+              "suicid": [
+                "depression"
+              ],
+              "kill": [
+                "depression"
+              ],
+              "myself": [
+                "depression"
+              ],
+              "someon": [
+                "support"
+              ],
+              "talk": [
+                "support",
+                "mental_health"
+              ],
+              "overdos": [
+                "overdose"
+              ],
+              "my": [
+                "overdose",
+                "mental_health"
+              ],
+              "friend": [
+                "overdose"
+              ],
+              "in": [
+                "overdose"
+              ],
+              "case": [
+                "overdose"
+              ],
+              "of": [
+                "overdose",
+                "relapse_prevention"
+              ],
+              "an": [
+                "overdose"
+              ],
+              "want": [
+                "quit_substance",
+                "relapse_prevention",
+                "mental_health",
+                "find_support_group"
+              ],
+              "quit": [
+                "quit_substance"
+              ],
+              "smoke": [
+                "quit_substance"
+              ],
+              "drink": [
+                "quit_substance"
+              ],
+              "use": [
+                "quit_substance"
+              ],
+              "drug": [
+                "quit_substance"
+              ],
+              "afraid": [
+                "relapse_prevention"
+              ],
+              "relaps": [
+                "relapse_prevention"
+              ],
+              "how": [
+                "relapse_prevention",
+                "coping_with_stress"
+              ],
+              "prevent": [
+                "relapse_prevention"
+              ],
+              "learn": [
+                "relapse_prevention"
+              ],
+              "about": [
+                "relapse_prevention",
+                "mental_health"
+              ],
+              "mental": [
+                "mental_health"
+              ],
+              "health": [
+                "mental_health"
+              ],
+              "look": [
+                "find_support_group"
+              ],
+              "group": [
+                "find_support_group"
+              ],
+              "where": [
+                "find_support_group"
+              ],
+              "find": [
+                "find_support_group"
+              ],
+              "join": [
+                "find_support_group"
+              ],
+              "stress": [
+                "coping_with_stress"
+              ],
+              "cope": [
+                "coping_with_stress"
+              ],
+              "deal": [
+                "coping_with_stress"
               ]
             },
             "neuralNetwork": {
@@ -242,65 +1123,1301 @@
                 "log": true
               },
               "features": [
-                "goodby",
+                "hi",
+                "hey",
+                "is",
+                "anyon",
+                "there",
+                "hello",
+                "hay",
                 "bye",
-                "take",
-                "care",
                 "see",
                 "you",
                 "later",
+                "goodby",
+                "thank",
+                "that",
+                "help",
                 "for",
-                "now",
+                "the",
+                "who",
+                "are",
+                "what",
+                "your",
+                "name",
+                "should",
                 "i",
-                "must",
-                "go",
-                "hello",
-                "hi",
-                "howdi",
-                "greet"
+                "call",
+                "could",
+                "me",
+                "give",
+                "a",
+                "hand",
+                "pleas",
+                "can",
+                "do",
+                "need",
+                "support",
+                "think",
+                "am",
+                "addict",
+                "to",
+                "struggl",
+                "with",
+                "depress",
+                "feel",
+                "suicid",
+                "kill",
+                "myself",
+                "someon",
+                "talk",
+                "overdos",
+                "my",
+                "friend",
+                "in",
+                "case",
+                "of",
+                "an",
+                "want",
+                "quit",
+                "smoke",
+                "drink",
+                "use",
+                "drug",
+                "afraid",
+                "relaps",
+                "how",
+                "prevent",
+                "learn",
+                "about",
+                "mental",
+                "health",
+                "look",
+                "group",
+                "where",
+                "find",
+                "join",
+                "stress",
+                "cope",
+                "deal"
               ],
               "intents": [
-                "greetings.bye",
-                "greetings.hello"
+                "greeting",
+                "goodbye",
+                "thanks",
+                "about",
+                "name",
+                "help",
+                "addiction",
+                "depression",
+                "support",
+                "overdose",
+                "quit_substance",
+                "relapse_prevention",
+                "mental_health",
+                "find_support_group",
+                "coping_with_stress"
               ],
               "perceptrons": [
                 [
-                  10.274190902709961,
-                  5.2450642585754395,
-                  2.622633457183838,
-                  2.622633457183838,
-                  3.496455430984497,
-                  3.496455430984497,
-                  3.496455430984497,
-                  2.622265577316284,
-                  2.622265577316284,
-                  3.4963674545288086,
-                  3.4963674545288086,
-                  3.4963674545288086,
-                  -3.754267930984497,
-                  -3.7424192428588867,
-                  -3.729870557785034,
-                  -3.7166337966918945,
-                  3.7849187223320993
+                  10.041854858398438,
+                  10.037687301635742,
+                  0.45182502269744873,
+                  4.810683250427246,
+                  4.810683250427246,
+                  10.023689270019531,
+                  10.010339736938477,
+                  -4.203466415405273,
+                  -0.9361342787742615,
+                  -2.4667723178863525,
+                  -0.9361342787742615,
+                  -4.197185516357422,
+                  -4.195491790771484,
+                  -2.110344648361206,
+                  -2.5647523403167725,
+                  -0.26475396752357483,
+                  -0.2575305104255676,
+                  -0.7873252034187317,
+                  -0.9656878113746643,
+                  -1.722154974937439,
+                  -1.4787951707839966,
+                  -1.4787951707839966,
+                  -0.030672604218125343,
+                  -2.5564775466918945,
+                  -0.030672604218125343,
+                  -0.03950171917676926,
+                  -1.507003903388977,
+                  -0.47925814986228943,
+                  -0.7777117490768433,
+                  -0.47925814986228943,
+                  -1.447008490562439,
+                  -0.5002904534339905,
+                  -0.0018257461488246918,
+                  -0.5477925539016724,
+                  -1.2657151222229004,
+                  -0.12636414170265198,
+                  -1.120955228805542,
+                  -4.183620452880859,
+                  -0.7779679298400879,
+                  -0.12927477061748505,
+                  -0.2916957437992096,
+                  -0.6237496137619019,
+                  -0.28299540281295776,
+                  -4.173844814300537,
+                  -2.1050608158111572,
+                  -2.1050608158111572,
+                  -0.16601145267486572,
+                  -0.16601145267486572,
+                  -4.172079563140869,
+                  -0.9874001741409302,
+                  -0.9874001741409302,
+                  0,
+                  0,
+                  -0.07470645010471344,
+                  0,
+                  -0.36556529998779297,
+                  -0.3648172914981842,
+                  -0.14663593471050262,
+                  -0.14536727964878082,
+                  -0.07276388257741928,
+                  -0.07276388257741928,
+                  -0.07470645010471344,
+                  -0.3835892677307129,
+                  -0.4607172906398773,
+                  -0.30885422229766846,
+                  -0.0003740233660209924,
+                  -0.0003740233660209924,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.2491057813167572,
+                  0,
+                  -0.15258917212486267,
+                  4.210194471821015
                 ],
                 [
-                  -6.780580043792725,
-                  -3.4955687522888184,
-                  -1.747991681098938,
-                  -1.747991681098938,
-                  -2.330076217651367,
-                  -2.330076217651367,
-                  -2.330076217651367,
-                  -1.7473820447921753,
-                  -1.7473820447921753,
-                  -2.3299577236175537,
-                  -2.3299577236175537,
-                  -2.3299577236175537,
-                  7.242153167724609,
-                  7.250351428985596,
-                  7.233221530914307,
-                  7.214792251586914,
-                  7.001812654472941
+                  -2.1795053482055664,
+                  -2.1749463081359863,
+                  -1.1586817502975464,
+                  -0.5188655853271484,
+                  -0.5188655853271484,
+                  -2.169656276702881,
+                  -2.1644649505615234,
+                  12.032120704650879,
+                  5.792660236358643,
+                  0.5037943124771118,
+                  5.792660236358643,
+                  12.0204439163208,
+                  -2.7197046279907227,
+                  -0.28481945395469666,
+                  -1.8462263345718384,
+                  -0.20203250646591187,
+                  -0.11111423373222351,
+                  -1.2351863384246826,
+                  -1.7570542097091675,
+                  -1.3852076530456543,
+                  -0.4603421986103058,
+                  -0.4603421986103058,
+                  -0.29377636313438416,
+                  -1.4078973531723022,
+                  -0.29377636313438416,
+                  -0.45126762986183167,
+                  -1.1381309032440186,
+                  -0.22436924278736115,
+                  -0.3860127329826355,
+                  -0.22436924278736115,
+                  -0.5926263332366943,
+                  -0.9944218993186951,
+                  -0.06205626577138901,
+                  -0.2887329161167145,
+                  -0.5569303035736084,
+                  -0.06517216563224792,
+                  -0.593680202960968,
+                  -2.193629503250122,
+                  -0.3930272161960602,
+                  -0.07173644006252289,
+                  -0.07173644006252289,
+                  -0.31942498683929443,
+                  -0.15124301612377167,
+                  -2.1894588470458984,
+                  -1.1066917181015015,
+                  -1.1066917181015015,
+                  -0.0735040009021759,
+                  -0.0735040009021759,
+                  -2.186387538909912,
+                  -0.1752057522535324,
+                  -0.1752057522535324,
+                  0,
+                  0,
+                  -0.05434608459472656,
+                  0,
+                  -0.1902942806482315,
+                  -0.15477745234966278,
+                  -0.06534750014543533,
+                  -0.05887468904256821,
+                  -0.030214769765734673,
+                  -0.030214769765734673,
+                  -0.05434608459472656,
+                  -0.09865973889827728,
+                  -0.0067064459435641766,
+                  -0.043998196721076965,
+                  -0.03549591824412346,
+                  -0.03549591824412346,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.051989030092954636,
+                  0,
+                  0,
+                  2.1985241758425382
+                ],
+                [
+                  -0.8148442506790161,
+                  -0.813823938369751,
+                  3.5018603801727295,
+                  -2.157290458679199,
+                  -2.157290458679199,
+                  -0.8099492788314819,
+                  -0.8085008859634399,
+                  -0.8069608211517334,
+                  -0.5910489559173584,
+                  0.24881990253925323,
+                  -0.5910489559173584,
+                  -0.8047136664390564,
+                  13.288689613342285,
+                  8.073700904846191,
+                  1.8697704076766968,
+                  -0.925894021987915,
+                  -0.7435023784637451,
+                  -0.7045508623123169,
+                  -1.0263854265213013,
+                  -1.8504664897918701,
+                  -1.2346582412719727,
+                  -1.2346582412719727,
+                  -0.14007455110549927,
+                  -1.4526546001434326,
+                  -0.14007455110549927,
+                  -1.5065739154815674,
+                  -1.7871938943862915,
+                  -0.08177244663238525,
+                  -0.8162915706634521,
+                  -0.08177244663238525,
+                  -0.16516606509685516,
+                  -3.0629587173461914,
+                  -0.06429027765989304,
+                  -1.0309112071990967,
+                  -0.20072118937969208,
+                  -0.034551747143268585,
+                  -0.20329581201076508,
+                  -0.8186653852462769,
+                  -0.05530765652656555,
+                  -0.01282390858978033,
+                  -0.42025306820869446,
+                  -0.04148101061582565,
+                  -0.010784520767629147,
+                  -0.8176676034927368,
+                  -0.45912647247314453,
+                  -0.45912647247314453,
+                  0,
+                  0,
+                  -1.5832043886184692,
+                  -1.472166657447815,
+                  -1.2643102407455444,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.16642282903194427,
+                  -0.16642282903194427,
+                  -0.07194644212722778,
+                  -0.07194644212722778,
+                  0,
+                  0,
+                  0,
+                  -0.19184382259845734,
+                  -0.19184382259845734,
+                  0,
+                  0.8202480290516913
+                ],
+                [
+                  -0.13903076946735382,
+                  -0.13439953327178955,
+                  -0.3869083523750305,
+                  -0.020310766994953156,
+                  -0.020310766994953156,
+                  -0.12897129356861115,
+                  -0.12465788424015045,
+                  -0.12048335373401642,
+                  -1.169336199760437,
+                  2.3338210582733154,
+                  -1.169336199760437,
+                  -0.08222191780805588,
+                  -2.0542244911193848,
+                  0,
+                  -1.3801798820495605,
+                  -0.8306261301040649,
+                  0,
+                  2.876725435256958,
+                  9.371330261230469,
+                  2.7987589836120605,
+                  -1.2540898323059082,
+                  -1.2540898323059082,
+                  -1.5758135318756104,
+                  -1.6967028379440308,
+                  -1.5758135318756104,
+                  -0.566483199596405,
+                  -1.5768711566925049,
+                  -0.044270701706409454,
+                  -0.07306560128927231,
+                  -0.044270701706409454,
+                  -0.05822907015681267,
+                  -1.5776033401489258,
+                  -0.865331768989563,
+                  -0.026386890560388565,
+                  -0.033189255744218826,
+                  -0.011390441097319126,
+                  -0.050873465836048126,
+                  -0.17995911836624146,
+                  -0.027989067137241364,
+                  -0.005952256731688976,
+                  -0.005952256731688976,
+                  -0.01262608915567398,
+                  -0.0027504435274749994,
+                  -0.14819587767124176,
+                  -0.11621200293302536,
+                  -0.11621200293302536,
+                  -0.00011656420974759385,
+                  -0.00011656420974759385,
+                  -0.19052062928676605,
+                  -0.025531187653541565,
+                  -0.025531187653541565,
+                  -0.017352841794490814,
+                  -0.017352841794490814,
+                  -0.017352841794490814,
+                  -0.017352841794490814,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.27824801535335014
+                ],
+                [
+                  -0.08385268598794937,
+                  -0.08070557564496994,
+                  0.17395521700382233,
+                  -0.4427321255207062,
+                  -0.4427321255207062,
+                  -0.06575746089220047,
+                  -0.06330039352178574,
+                  -0.06093427911400795,
+                  -0.17416444420814514,
+                  -0.7160456776618958,
+                  -0.17416444420814514,
+                  -0.05173817649483681,
+                  -0.21234968304634094,
+                  -0.18183322250843048,
+                  -0.8112888336181641,
+                  -0.8916457295417786,
+                  0,
+                  -0.08863910287618637,
+                  -3.4199230670928955,
+                  4.452666759490967,
+                  5.026360988616943,
+                  5.026360988616943,
+                  4.598247528076172,
+                  1.6697993278503418,
+                  4.598247528076172,
+                  -0.1559884399175644,
+                  -1.2656365633010864,
+                  -0.0743323564529419,
+                  -0.37630850076675415,
+                  -0.0743323564529419,
+                  -0.10494320094585419,
+                  -1.208561897277832,
+                  -1.7935786247253418,
+                  -0.7909797430038452,
+                  -0.568618655204773,
+                  -0.12350340932607651,
+                  -0.9642490148544312,
+                  -0.5093125104904175,
+                  -0.7309091091156006,
+                  -0.14882126450538635,
+                  -0.14882126450538635,
+                  -0.39544007182121277,
+                  -0.2599606215953827,
+                  -0.15044142305850983,
+                  -0.11784353107213974,
+                  -0.11784353107213974,
+                  -0.10220344364643097,
+                  -0.10220344364643097,
+                  -1.1035038232803345,
+                  -0.19207869470119476,
+                  -0.19207869470119476,
+                  -0.7595295310020447,
+                  -0.7595295310020447,
+                  -0.7595295310020447,
+                  -0.7595295310020447,
+                  -0.30957984924316406,
+                  -0.23405230045318604,
+                  -0.09594499319791794,
+                  -0.08522003144025803,
+                  -0.04261292889714241,
+                  -0.04261292889714241,
+                  0,
+                  -0.08410022407770157,
+                  -0.0063636708073318005,
+                  -0.08410022407770157,
+                  -0.07552362978458405,
+                  -0.07552362978458405,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.13552279770374298,
+                  0,
+                  0,
+                  -0.3100555111428325
+                ],
+                [
+                  -0.12539829313755035,
+                  -0.12059519439935684,
+                  -2.5559303760528564,
+                  -0.046176522970199585,
+                  -0.046176522970199585,
+                  -0.11363904178142548,
+                  -0.10928097367286682,
+                  -0.10508905351161957,
+                  -1.4578757286071777,
+                  4.113373279571533,
+                  -1.4578757286071777,
+                  -0.06555028259754181,
+                  -2.9107139110565186,
+                  -2.290665626525879,
+                  5.886563301086426,
+                  -0.635461151599884,
+                  -1.4080561399459839,
+                  -0.8942466974258423,
+                  -2.4912383556365967,
+                  -0.5170702934265137,
+                  -0.0584537535905838,
+                  -0.0584537535905838,
+                  -0.1789998859167099,
+                  -5.099058628082275,
+                  -0.1789998859167099,
+                  -0.4209582805633545,
+                  5.9366559982299805,
+                  -3.113746404647827,
+                  11.425950050354004,
+                  -3.113746404647827,
+                  4.740852355957031,
+                  5.264737606048584,
+                  1.337700605392456,
+                  3.2918701171875,
+                  4.26132345199585,
+                  -0.1713525354862213,
+                  -2.1885852813720703,
+                  -1.0949969291687012,
+                  -1.9262069463729858,
+                  -0.22902339696884155,
+                  -3.0556578636169434,
+                  -0.4043879806995392,
+                  -0.0922391340136528,
+                  -0.4332583546638489,
+                  -0.34817466139793396,
+                  -0.34817466139793396,
+                  -0.46997734904289246,
+                  -0.46997734904289246,
+                  -0.6672198176383972,
+                  -1.3470176458358765,
+                  -0.11561024934053421,
+                  -0.185453400015831,
+                  -0.185453400015831,
+                  -0.185453400015831,
+                  -0.185453400015831,
+                  -0.7536415457725525,
+                  -0.005497080273926258,
+                  -0.005497080273926258,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4432081878185272,
+                  -0.4432081878185272,
+                  -0.4432081878185272,
+                  0,
+                  0,
+                  -1.1758629083633423,
+                  -1.1758629083633423,
+                  -0.8091530799865723,
+                  -5.952542781829834,
+                  -4.347862243652344,
+                  -4.347862243652344,
+                  -0.7426474690437317,
+                  -1.4990315437316895,
+                  -1.4990315437316895,
+                  0,
+                  -1.18655006891655
+                ],
+                [
+                  -0.5169589519500732,
+                  -0.5158138871192932,
+                  -0.28698697686195374,
+                  -0.11847522109746933,
+                  -0.11847522109746933,
+                  -0.5145177245140076,
+                  -0.5132414102554321,
+                  -0.5119042992591858,
+                  -0.1052849069237709,
+                  -0.3117135465145111,
+                  -0.1052849069237709,
+                  -0.5103835463523865,
+                  -0.5093424916267395,
+                  -0.08500218391418457,
+                  -0.14844782650470734,
+                  -0.3210061490535736,
+                  -0.006584311835467815,
+                  -0.10292796045541763,
+                  -0.10652962327003479,
+                  -0.2619105279445648,
+                  -0.12906047701835632,
+                  -0.12906047701835632,
+                  0,
+                  -1.6919951438903809,
+                  0,
+                  -0.02162475697696209,
+                  -0.054499849677085876,
+                  -0.030825788155198097,
+                  -0.3738346993923187,
+                  -0.030825788155198097,
+                  -0.030825788155198097,
+                  -0.06081093102693558,
+                  -0.08909448981285095,
+                  -1.0670342445373535,
+                  -0.589607298374176,
+                  0.1017727479338646,
+                  0.7388301491737366,
+                  13.64097785949707,
+                  1.0315841436386108,
+                  0.550574004650116,
+                  0.539498507976532,
+                  -2.5501768589019775,
+                  -1.0505374670028687,
+                  -0.5205875039100647,
+                  -0.27885061502456665,
+                  -0.27885061502456665,
+                  -0.7851125001907349,
+                  -0.7851125001907349,
+                  -0.5209290981292725,
+                  -0.9178028106689453,
+                  -0.05536478012800217,
+                  -0.08909448981285095,
+                  -0.08909448981285095,
+                  -0.6630457639694214,
+                  -0.08909448981285095,
+                  -1.160496711730957,
+                  -0.9820135831832886,
+                  -0.38129356503486633,
+                  -0.2874167561531067,
+                  -0.1778378188610077,
+                  -0.1778378188610077,
+                  -0.533607542514801,
+                  -0.7446363568305969,
+                  -0.020390713587403297,
+                  -0.16585169732570648,
+                  -0.14635728299617767,
+                  -0.14635728299617767,
+                  -0.8341965079307556,
+                  -0.8341965079307556,
+                  -0.3095698058605194,
+                  -0.3095698058605194,
+                  0,
+                  0,
+                  0,
+                  -0.3622673451900482,
+                  0,
+                  -0.0055378153920173645,
+                  0.5249966036401137
+                ],
+                [
+                  -1.6369484663009644,
+                  -1.6348952054977417,
+                  -0.938778817653656,
+                  -0.42753931879997253,
+                  -0.42753931879997253,
+                  -1.6324355602264404,
+                  -1.6299487352371216,
+                  -1.6272599697113037,
+                  -0.35003966093063354,
+                  -0.9578148722648621,
+                  -0.35003966093063354,
+                  -1.6241995096206665,
+                  -1.622657060623169,
+                  -0.2733845114707947,
+                  -0.42425772547721863,
+                  -0.7660397291183472,
+                  -0.027003685012459755,
+                  -0.3287985324859619,
+                  -0.3500952124595642,
+                  -0.8168798685073853,
+                  -0.4097326695919037,
+                  -0.4097326695919037,
+                  0,
+                  -0.7281298041343689,
+                  0,
+                  -0.07844949513673782,
+                  -0.23387813568115234,
+                  -0.15148891508579254,
+                  -0.9483098983764648,
+                  -0.15148891508579254,
+                  -0.15148891508579254,
+                  -0.346675306558609,
+                  -0.25589948892593384,
+                  -1.1563574075698853,
+                  -1.2541990280151367,
+                  -0.23049437999725342,
+                  1.9680731296539307,
+                  -2.8260626792907715,
+                  -1.6644939184188843,
+                  0.04247954115271568,
+                  -0.07250232994556427,
+                  11.414032936096191,
+                  0.010134497657418251,
+                  12.57951831817627,
+                  6.322464942932129,
+                  6.322464942932129,
+                  -0.5594418048858643,
+                  -0.5594418048858643,
+                  -1.6783450841903687,
+                  -1.66167151927948,
+                  -0.14404430985450745,
+                  -0.25589948892593384,
+                  -0.25589948892593384,
+                  -1.5033769607543945,
+                  -0.25589948892593384,
+                  -0.6197103261947632,
+                  -0.6197103261947632,
+                  -0.2146417200565338,
+                  -0.15191903710365295,
+                  -0.09180060029029846,
+                  -0.09180060029029846,
+                  -1.1183406114578247,
+                  -1.4530290365219116,
+                  -0.34106165170669556,
+                  -0.24292336404323578,
+                  0,
+                  0,
+                  -1.4421758651733398,
+                  -1.4421758651733398,
+                  -0.7036007642745972,
+                  -0.7102730870246887,
+                  -0.001798925455659628,
+                  -0.001798925455659628,
+                  0,
+                  -3.326809883117676,
+                  0,
+                  -0.05213719978928566,
+                  1.6396063087251473
+                ],
+                [
+                  -0.03419312834739685,
+                  -0.032940950244665146,
+                  -0.08854235708713531,
+                  -0.006842376198619604,
+                  -0.006842376198619604,
+                  -0.03136330842971802,
+                  -0.03021288476884365,
+                  -0.02910413034260273,
+                  -0.009295248426496983,
+                  -0.4442219138145447,
+                  -0.009295248426496983,
+                  -0.027561884373426437,
+                  -0.03367804363369942,
+                  0,
+                  -2.8869073390960693,
+                  -0.10423559695482254,
+                  0,
+                  -0.011767297983169556,
+                  -0.011767297983169556,
+                  -0.6946163177490234,
+                  0,
+                  0,
+                  -0.4073917865753174,
+                  2.1617519855499268,
+                  -0.4073917865753174,
+                  0,
+                  -2.0165562629699707,
+                  0,
+                  -12.491381645202637,
+                  0,
+                  -2.0165562629699707,
+                  -0.45265859365463257,
+                  -0.19165757298469543,
+                  6.926885604858398,
+                  4.401330947875977,
+                  -0.2907107472419739,
+                  -1.52663254737854,
+                  -0.7095560431480408,
+                  0.10904207825660706,
+                  -0.04120408743619919,
+                  -2.4372525215148926,
+                  -0.3112276494503021,
+                  -0.06535009294748306,
+                  0,
+                  0,
+                  0,
+                  2.90351939201355,
+                  2.4264893531799316,
+                  -0.48211902379989624,
+                  -1.253709316253662,
+                  -0.06445793062448502,
+                  -0.19165757298469543,
+                  -0.19165757298469543,
+                  -0.4182673394680023,
+                  -0.19165757298469543,
+                  -2.048243284225464,
+                  -1.1323167085647583,
+                  -0.3291318118572235,
+                  -0.2971557676792145,
+                  -0.2220514714717865,
+                  -0.2220514714717865,
+                  -0.14932012557983398,
+                  -0.7271984219551086,
+                  -0.28279364109039307,
+                  -0.498537540435791,
+                  -0.14586231112480164,
+                  -0.6468492150306702,
+                  -1.1662472486495972,
+                  -1.1662472486495972,
+                  -0.10423559695482254,
+                  -0.3915264308452606,
+                  -0.11512335389852524,
+                  -0.11512335389852524,
+                  -0.08521818369626999,
+                  -1.7891024351119995,
+                  -1.7452107667922974,
+                  0,
+                  -0.19103117055373522
+                ],
+                [
+                  -0.7351837158203125,
+                  -0.7334048748016357,
+                  -0.9233095645904541,
+                  -0.6867383122444153,
+                  -0.6867383122444153,
+                  -0.7312403917312622,
+                  -0.7292518615722656,
+                  -0.7271841764450073,
+                  -0.059296321123838425,
+                  -0.828997790813446,
+                  -0.059296321123838425,
+                  -0.7250105738639832,
+                  -0.7231947183609009,
+                  -0.5115140676498413,
+                  -0.7982720732688904,
+                  -0.363137423992157,
+                  -0.0030405311845242977,
+                  -0.0315660759806633,
+                  -0.22140949964523315,
+                  -0.8094437122344971,
+                  -0.7459771633148193,
+                  -0.7459771633148193,
+                  -0.10786599665880203,
+                  -1.3450325727462769,
+                  -0.10786599665880203,
+                  0,
+                  -0.44071874022483826,
+                  -0.02693878673017025,
+                  -0.15219928324222565,
+                  -0.02693878673017025,
+                  -0.10199406743049622,
+                  -0.5514721870422363,
+                  0.31500890851020813,
+                  -0.23129764199256897,
+                  -0.19928549230098724,
+                  0,
+                  -0.7525832056999207,
+                  -0.7193650007247925,
+                  -0.5380503535270691,
+                  -0.20578812062740326,
+                  -0.5006905794143677,
+                  0,
+                  -0.025587040930986404,
+                  -0.7168222069740295,
+                  -0.36782222986221313,
+                  -0.36782222986221313,
+                  0,
+                  -0.078684002161026,
+                  13.207324028015137,
+                  0.35062265396118164,
+                  0.9656908512115479,
+                  0.6537332534790039,
+                  0.6537332534790039,
+                  0.21782644093036652,
+                  0.6537332534790039,
+                  -0.5380503535270691,
+                  -0.3947821259498596,
+                  -0.11404106020927429,
+                  -0.107655830681324,
+                  -0.08255112171173096,
+                  -0.08255112171173096,
+                  -0.37601208686828613,
+                  -0.5970659255981445,
+                  -0.13162140548229218,
+                  -0.1604413241147995,
+                  -0.02138333208858967,
+                  -0.11877774447202682,
+                  -0.5945135951042175,
+                  -0.5945135951042175,
+                  -0.036769963800907135,
+                  -0.10097814351320267,
+                  -0.04856801778078079,
+                  -0.04856801778078079,
+                  0,
+                  -0.04754253849387169,
+                  -0.008192312903702259,
+                  -0.0021700554061681032,
+                  0.7515369590421165
+                ],
+                [
+                  -0.04566580802202225,
+                  -0.04403458163142204,
+                  -0.03648856282234192,
+                  -0.026461398229002953,
+                  -0.026461398229002953,
+                  -0.04137523099780083,
+                  -0.039893198758363724,
+                  -0.03846333920955658,
+                  -0.01252093818038702,
+                  -0.1781364381313324,
+                  -0.01252093818038702,
+                  -0.03656655550003052,
+                  -0.043113891035318375,
+                  0,
+                  -0.15521328151226044,
+                  -0.04335615038871765,
+                  0,
+                  -0.012015653774142265,
+                  -0.018246809020638466,
+                  -0.17291562259197235,
+                  -0.010426076129078865,
+                  -0.010426076129078865,
+                  -0.12859894335269928,
+                  0.4771854877471924,
+                  -0.12859894335269928,
+                  0,
+                  0,
+                  0,
+                  -1.4222556352615356,
+                  0,
+                  0,
+                  -0.340683251619339,
+                  -0.006545304786413908,
+                  -0.5941948294639587,
+                  -1.4222556352615356,
+                  -0.3764925003051758,
+                  -1.4353735446929932,
+                  -0.8472996950149536,
+                  1.786227822303772,
+                  -0.08798788487911224,
+                  -0.3284394145011902,
+                  0,
+                  -0.022570831701159477,
+                  -0.019249241799116135,
+                  -0.009969029575586319,
+                  -0.009969029575586319,
+                  -0.43005967140197754,
+                  -1.2603965997695923,
+                  -0.019248705357313156,
+                  -1.0571167469024658,
+                  0,
+                  -0.006545304786413908,
+                  -0.006545304786413908,
+                  -0.2833152115345001,
+                  -0.006545304786413908,
+                  3.066429376602173,
+                  6.38320779800415,
+                  2.5523712635040283,
+                  2.554128408432007,
+                  1.2766865491867065,
+                  1.2766865491867065,
+                  -0.19691863656044006,
+                  -1.5797324180603027,
+                  -0.20442362129688263,
+                  -1.2864220142364502,
+                  -0.9813376665115356,
+                  -1.9065395593643188,
+                  -1.0571167469024658,
+                  -1.0571167469024658,
+                  -0.04335615038871765,
+                  -1.4222556352615356,
+                  -0.0660366639494896,
+                  -0.0660366639494896,
+                  -1.2367475032806396,
+                  -0.04715437442064285,
+                  -0.012641449458897114,
+                  0,
+                  0.019284827609641092
+                ],
+                [
+                  -0.0727962777018547,
+                  -0.06997089087963104,
+                  -0.06961274892091751,
+                  -0.04728047922253609,
+                  -0.04728047922253609,
+                  -0.06510523706674576,
+                  -0.06257626414299011,
+                  -0.060145117342472076,
+                  -0.018292013555765152,
+                  -0.5342247486114502,
+                  -0.018292013555765152,
+                  -0.056874655187129974,
+                  -0.07029303163290024,
+                  0,
+                  -0.4602747857570648,
+                  -0.3367939591407776,
+                  0,
+                  -0.01926826313138008,
+                  -0.030451448634266853,
+                  -0.8333626985549927,
+                  -0.01852879859507084,
+                  -0.01852879859507084,
+                  -0.19918663799762726,
+                  0.7213407754898071,
+                  -0.19918663799762726,
+                  0,
+                  -0.04587993025779724,
+                  0,
+                  -0.9199927449226379,
+                  0,
+                  0,
+                  0.9263352155685425,
+                  -0.5621563792228699,
+                  -0.36182764172554016,
+                  -0.9199927449226379,
+                  -0.35772430896759033,
+                  0.4143400192260742,
+                  -0.7660490870475769,
+                  -0.5598990321159363,
+                  -0.19369441270828247,
+                  -1.365332007408142,
+                  -1.0281343460083008,
+                  -0.5967375636100769,
+                  -0.001024922588840127,
+                  -0.000647158594802022,
+                  -0.000647158594802022,
+                  -0.05890288203954697,
+                  -0.5530429482460022,
+                  -0.4935811460018158,
+                  -0.9008728265762329,
+                  0,
+                  -0.4935811460018158,
+                  -0.4935811460018158,
+                  2.7475178241729736,
+                  -0.4935811460018158,
+                  0.28559815883636475,
+                  -0.5161949992179871,
+                  -0.22681750357151031,
+                  -0.16154226660728455,
+                  -0.08522088080644608,
+                  -0.08522088080644608,
+                  3.2657670974731445,
+                  7.244237422943115,
+                  1.5228452682495117,
+                  3.9784650802612305,
+                  1.6287049055099487,
+                  1.0947747230529785,
+                  -0.9008728265762329,
+                  -0.9008728265762329,
+                  -0.21533259749412537,
+                  -0.9199927449226379,
+                  -0.29895633459091187,
+                  -0.29895633459091187,
+                  -0.19302599132061005,
+                  -1.3468023538589478,
+                  -0.07785690575838089,
+                  -0.7739914059638977,
+                  -0.10750743084434948
+                ],
+                [
+                  -0.028781333938241005,
+                  -0.027605850249528885,
+                  -1.1063294410705566,
+                  -0.016117136925458908,
+                  -0.016117136925458908,
+                  -0.025493280962109566,
+                  -0.024451900273561478,
+                  -0.023453030735254288,
+                  -0.013580067083239555,
+                  -0.30254364013671875,
+                  -0.013580067083239555,
+                  -0.02166493982076645,
+                  -0.10987772792577744,
+                  -0.08399485796689987,
+                  0.38296130299568176,
+                  -0.2552322745323181,
+                  -0.0675152838230133,
+                  -0.01472158171236515,
+                  -0.025072498247027397,
+                  -0.12970784306526184,
+                  -0.009209157899022102,
+                  -0.009209157899022102,
+                  -0.09458587318658829,
+                  -0.11920275539159775,
+                  -0.09458587318658829,
+                  -0.05571763217449188,
+                  -0.05571763217449188,
+                  0,
+                  -0.8786590695381165,
+                  0,
+                  0,
+                  -0.4249887466430664,
+                  0,
+                  0.14021442830562592,
+                  -0.7084696292877197,
+                  -0.09898001700639725,
+                  -0.1243736669421196,
+                  -0.8216988444328308,
+                  -0.26173922419548035,
+                  0.6442936658859253,
+                  1.2999234199523926,
+                  -0.8186255693435669,
+                  -0.17866280674934387,
+                  0,
+                  0,
+                  0,
+                  -0.455945760011673,
+                  0.6701996326446533,
+                  -0.9378705024719238,
+                  3.862139940261841,
+                  -0.9378705024719238,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.5032851099967957,
+                  -0.14559867978096008,
+                  -0.052864428609609604,
+                  -0.03563734516501427,
+                  -0.02028559148311615,
+                  -0.02028559148311615,
+                  0,
+                  -0.2202177792787552,
+                  -0.194301575422287,
+                  -0.2202177792787552,
+                  -0.2202177792787552,
+                  0.9107462167739868,
+                  4.800237655639648,
+                  4.800237655639648,
+                  -0.1072668507695198,
+                  -0.5588286519050598,
+                  -0.0991242378950119,
+                  -0.0991242378950119,
+                  -0.18423588573932648,
+                  -1.1938843727111816,
+                  -0.6212853789329529,
+                  -0.194301575422287,
+                  -0.8799491188287487
+                ],
+                [
+                  -0.05473801866173744,
+                  -0.0524999275803566,
+                  -0.10514799505472183,
+                  -0.04540684446692467,
+                  -0.04540684446692467,
+                  -0.04850150644779205,
+                  -0.046518053859472275,
+                  -0.04461566358804703,
+                  -0.024690544232726097,
+                  -0.5674639940261841,
+                  -0.024690544232726097,
+                  -0.04128196835517883,
+                  -0.11176005750894547,
+                  -0.015120523050427437,
+                  -0.6598142385482788,
+                  1.7501415014266968,
+                  -0.023080963641405106,
+                  -0.03692410886287689,
+                  -0.06301750987768173,
+                  -0.3977546989917755,
+                  -0.029850250110030174,
+                  -0.029850250110030174,
+                  -0.15196333825588226,
+                  -0.24530085921287537,
+                  -0.15196333825588226,
+                  0,
+                  -0.9603462219238281,
+                  -0.3846893608570099,
+                  2.418107032775879,
+                  -0.3846893608570099,
+                  -0.8403006196022034,
+                  1.1193857192993164,
+                  -0.10233298689126968,
+                  -3.6653974056243896,
+                  2.5403311252593994,
+                  -0.2069614678621292,
+                  0.9549553990364075,
+                  -0.5327934622764587,
+                  0.8420463800430298,
+                  0,
+                  -0.4316268265247345,
+                  -0.0909540206193924,
+                  -0.2615461051464081,
+                  0,
+                  0,
+                  0,
+                  -0.009516766294836998,
+                  -0.16604836285114288,
+                  0,
+                  -0.15335571765899658,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1.3892995119094849,
+                  -0.6718377470970154,
+                  -0.2680611312389374,
+                  -0.26647356152534485,
+                  -0.13694043457508087,
+                  -0.13694043457508087,
+                  0,
+                  -0.23363472521305084,
+                  -0.4031292796134949,
+                  -0.23363472521305084,
+                  -0.15884637832641602,
+                  -0.3122023046016693,
+                  -0.15335571765899658,
+                  -0.15335571765899658,
+                  1.8996046781539917,
+                  6.015604019165039,
+                  1.7426583766937256,
+                  1.7426583766937256,
+                  2.3733394145965576,
+                  -0.7538556456565857,
+                  -0.10827070474624634,
+                  -0.2421530932188034,
+                  -1.0477245977067902
+                ],
+                [
+                  -0.09038212895393372,
+                  -0.08667750656604767,
+                  -0.29480206966400146,
+                  -0.07397361099720001,
+                  -0.07397361099720001,
+                  -0.08010056614875793,
+                  -0.07681682705879211,
+                  -0.07366763800382614,
+                  -0.03659234568476677,
+                  -0.9165053963661194,
+                  -0.03659234568476677,
+                  -0.06841100752353668,
+                  -0.300363689661026,
+                  -0.14987331628799438,
+                  0.012924455106258392,
+                  -0.17517833411693573,
+                  -0.1528792530298233,
+                  -0.047976475208997726,
+                  -0.08181694895029068,
+                  -0.41242218017578125,
+                  -0.039960648864507675,
+                  -0.039960648864507675,
+                  -0.2189399152994156,
+                  0.8062208890914917,
+                  -0.2189399152994156,
+                  -0.077281154692173,
+                  -0.13414278626441956,
+                  -0.015716224908828735,
+                  -1.3009668588638306,
+                  -0.015716224908828735,
+                  -0.015716224908828735,
+                  0.25785326957702637,
+                  -0.045024506747722626,
+                  -0.14776581525802612,
+                  -0.7616663575172424,
+                  -0.2064218819141388,
+                  0.6789498329162598,
+                  -1.4012502431869507,
+                  -0.6436719298362732,
+                  -1.6376879215240479,
+                  1.4825128316879272,
+                  -3.948287010192871,
+                  3.122382402420044,
+                  0,
+                  0,
+                  0,
+                  -0.1573672592639923,
+                  -0.1573672592639923,
+                  -0.028701087459921837,
+                  -0.9872868657112122,
+                  0,
+                  -0.028701087459921837,
+                  -0.028701087459921837,
+                  -0.06838753819465637,
+                  -0.028701087459921837,
+                  -0.000291679723886773,
+                  -0.000291679723886773,
+                  -0.000291679723886773,
+                  0,
+                  0,
+                  0,
+                  -0.02872929722070694,
+                  -0.9445802569389343,
+                  0.5885863304138184,
+                  -0.9048199653625488,
+                  0,
+                  0,
+                  -0.9872868657112122,
+                  -0.9872868657112122,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  10.254504203796387,
+                  2.499566078186035,
+                  1.5178402662277222,
+                  -0.6179871797532139
                 ]
               ]
             }
@@ -312,39 +2429,223 @@
     "extraSentences": [
       [
         "en",
-        "goodbye"
+        "Hi"
       ],
       [
         "en",
-        "bye take care"
+        "Hey"
       ],
       [
         "en",
-        "see you later"
+        "Is anyone there?"
       ],
       [
         "en",
-        "bye for now"
+        "Hello"
       ],
       [
         "en",
-        "i must go"
+        "Hay"
       ],
       [
         "en",
-        "hello"
+        "Bye"
       ],
       [
         "en",
-        "hi"
+        "See you later"
       ],
       [
         "en",
-        "howdy"
+        "Goodbye"
       ],
       [
         "en",
-        "Greetings"
+        "Thanks"
+      ],
+      [
+        "en",
+        "Thank you"
+      ],
+      [
+        "en",
+        "That's helpful"
+      ],
+      [
+        "en",
+        "Thanks for the help"
+      ],
+      [
+        "en",
+        "Who are you?"
+      ],
+      [
+        "en",
+        "What are you?"
+      ],
+      [
+        "en",
+        "Who you are?"
+      ],
+      [
+        "en",
+        "what is your name"
+      ],
+      [
+        "en",
+        "what should I call you"
+      ],
+      [
+        "en",
+        "whats your name?"
+      ],
+      [
+        "en",
+        "Could you help me?"
+      ],
+      [
+        "en",
+        "give me a hand please"
+      ],
+      [
+        "en",
+        "Can you help?"
+      ],
+      [
+        "en",
+        "What can you do for me?"
+      ],
+      [
+        "en",
+        "I need a support"
+      ],
+      [
+        "en",
+        "I need a help"
+      ],
+      [
+        "en",
+        "support me please"
+      ],
+      [
+        "en",
+        "I think I am addicted to"
+      ],
+      [
+        "en",
+        "addiction"
+      ],
+      [
+        "en",
+        "I am addicted to"
+      ],
+      [
+        "en",
+        "I am struggling with addiction"
+      ],
+      [
+        "en",
+        "I am depressed"
+      ],
+      [
+        "en",
+        "I am feeling depressed"
+      ],
+      [
+        "en",
+        "I am struggling with depression"
+      ],
+      [
+        "en",
+        "suicide"
+      ],
+      [
+        "en",
+        "kill myself"
+      ],
+      [
+        "en",
+        "I need support"
+      ],
+      [
+        "en",
+        "I need someone to talk to"
+      ],
+      [
+        "en",
+        "I need someone to talk to"
+      ],
+      [
+        "en",
+        "overdose"
+      ],
+      [
+        "en",
+        "My friend is overdosing"
+      ],
+      [
+        "en",
+        "what do I do in case of an overdose"
+      ],
+      [
+        "en",
+        "I want to quit smoking"
+      ],
+      [
+        "en",
+        "I want to quit drinking"
+      ],
+      [
+        "en",
+        "I want to quit using drugs"
+      ],
+      [
+        "en",
+        "I'm afraid of relapsing"
+      ],
+      [
+        "en",
+        "How can I prevent relapsing"
+      ],
+      [
+        "en",
+        "I want to learn about relapse prevention"
+      ],
+      [
+        "en",
+        "I'm struggling with my mental health"
+      ],
+      [
+        "en",
+        "I need help with my mental health"
+      ],
+      [
+        "en",
+        "I want to talk about my mental health"
+      ],
+      [
+        "en",
+        "I'm looking for a support group"
+      ],
+      [
+        "en",
+        "Where can I find a support group"
+      ],
+      [
+        "en",
+        "I want to join a support group"
+      ],
+      [
+        "en",
+        "I'm feeling stressed"
+      ],
+      [
+        "en",
+        "I need help coping with stress"
+      ],
+      [
+        "en",
+        "How can I deal with stress"
       ]
     ]
   },
@@ -362,24 +2663,7 @@
     },
     "responses": {
       "en": {
-        "greetings.bye": [
-          {
-            "answer": "see you soon!"
-          },
-          {
-            "answer": "Till next time"
-          },
-          {
-            "answer": "bye bye"
-          },
-          {
-            "answer": "have a great day"
-          }
-        ],
-        "greetings.hello": [
-          {
-            "answer": "Hey there!"
-          },
+        "greeting": [
           {
             "answer": "Hello"
           },
@@ -387,7 +2671,110 @@
             "answer": "Hi"
           },
           {
-            "answer": "Greetings"
+            "answer": "Hi there"
+          }
+        ],
+        "goodbye": [
+          {
+            "answer": "See you later"
+          },
+          {
+            "answer": "Have a nice day"
+          },
+          {
+            "answer": "Bye! Take care and feel free to reach out anytime!"
+          }
+        ],
+        "thanks": [
+          {
+            "answer": "Happy to help!"
+          },
+          {
+            "answer": "Any time!"
+          },
+          {
+            "answer": "My pleasure"
+          },
+          {
+            "answer": "You're most welcome!"
+          }
+        ],
+        "about": [
+          {
+            "answer": "I am Max, your bot assistant"
+          },
+          {
+            "answer": "I'm Max, an Artificial Intelligent bot designed to assist you with your concerns"
+          }
+        ],
+        "name": [
+          {
+            "answer": "You can call me Max."
+          },
+          {
+            "answer": "I'm Max!"
+          },
+          {
+            "answer": "Just call me Max"
+          }
+        ],
+        "help": [
+          {
+            "answer": "Tell me how can assist you"
+          },
+          {
+            "answer": "Tell me your problem to assist you"
+          },
+          {
+            "answer": "Yes Sure, How can I support you"
+          }
+        ],
+        "addiction": [
+          {
+            "answer": "There is no shame in struggling with addiction. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."
+          },
+          {
+            "answer": "Anyone can become addicted to drugs or alcohol. If you or someone you know is struggling with addiction, please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."
+          }
+        ],
+        "depression": [
+          {
+            "answer": "There is no shame in struggling with depression. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."
+          }
+        ],
+        "support": [
+          {
+            "answer": "There is no shame in struggling. Anyone can be susceptible to suffering from addiction or other mental and physical health issues. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."
+          }
+        ],
+        "overdose": [
+          {
+            "answer": "If you or someone you know is overdosing, please call 911 immediately."
+          }
+        ],
+        "quit_substance": [
+          {
+            "answer": "Quitting a substance can be difficult, but it is possible. Here are some resources that can help you:\n1. Nicotine Anonymous - www.nicotine-anonymous.org\n2. Alcoholics Anonymous - www.aa.org\n3. Narcotics Anonymous - www.na.org Remember that you are not alone, and there is help available."
+          }
+        ],
+        "relapse_prevention": [
+          {
+            "answer": "Relapse is a common part of the recovery process. It's important to have a plan in place to prevent it. Here are some tips for preventing relapse:\n 1. Identify triggers and learn how to manage them\n2. Build a support system of friends and family\n3. Seek professional help if necessary\n4. Keep yourself accountable by sharing your recovery journey with others\n5. Remember to take care of yourself physically and emotionally\n6. Stay active in recovery groups and meetings"
+          }
+        ],
+        "mental_health": [
+          {
+            "answer": "It's important to take care of your mental health. Here are some resources that can help:\n1. Mental Health Helpline - 1-877-303-2642\n2. Canadian Association for Suicide Prevention - www.suicideprevention.ca\n3. Canadian Mental Health Association - www.cmha.ca\n4. Mind Your Mind - www.mindyourmind.ca\nRemember that it's okay to ask for help and there are people who care and want to support you."
+          }
+        ],
+        "find_support_group": [
+          {
+            "answer": "Support groups can be a great way to connect with others going through similar struggles. Here are some resources to help you find a support group:\n1. Alcoholics Anonymous - www.aa.org\n2. Narcotics Anonymous - www.na.org\n3. Nicotine Anonymous - www.nicotine-anonymous.org\n4. SMART Recovery - www.smartrecovery.org\n5. Find a local support group - https://www.addictioncenter.com/treatment/support-groups/\nRemember that you are not alone, and there is help available."
+          }
+        ],
+        "coping_with_stress": [
+          {
+            "answer": "Stress is a normal part of life, but it can be overwhelming at times. Here are some tips for coping with stress:\n1. Take a break and do something you enjoy\n2. Exercise or engage in physical activity\n3. Practice deep breathing or meditation\n4. Connect with friends and family\n5. Get enough sleep\n6. Seek professional help if necessary\nRemember that it's important to take care of yourself and there are resources available to help you."
           }
         ]
       }
