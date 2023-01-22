@@ -47,6 +47,10 @@ export default function ClosestClinics({navigation}) {
         title='Chat'
         onPress={() => navigation.navigate('ChatScreen')}
       />
+      <Button
+        title='Progress Tracker'
+        onPress={() => navigation.navigate('ProgressTracker')}
+      />
     </View>
   )
 };
