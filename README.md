@@ -1,5 +1,5 @@
 # Sobriety.io
-Project for nwHacks 2023.
+Project for nwHacks 2023!
 
 ## About the Project
 Sobriety.io is a comprehensive tool designed to help individuals overcome drug addiction and maintain their sobriety. The app is built using React Native, making it available on both iOS and Android platforms.
