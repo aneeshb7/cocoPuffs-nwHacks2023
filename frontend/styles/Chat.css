@@ -1,0 +1,39 @@
+span.message-user {
+    font-weight: bold;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 10px;
+}
+
+.message-list > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    max-width: 80%;
+}
+
+div.message:not(.my-message) {
+    text-align: left;
+    background-color: lightgrey;
+    align-self: flex-start;
+}
+
+div.message.my-message {
+    text-align: left;
+    background-color: lightskyblue;
+    align-self: flex-end;
+}
+
+div.message {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* color: white; */
+}
