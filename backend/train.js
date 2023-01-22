@@ -12,12 +12,13 @@ const files = fs.readdirSync("./intents");
 for (const file of files) {
     let data = fs.readFileSync(`./intents/${file}`);
     data = JSON.parse(data);
-    const intent = file.replace(".json", "");
-    for (const question of data.questions) {
-        manager.addDocument("en", question, intent);
-    }
-    for (const answer of data.answers) {
-        manager.addAnswer("en", intent, answer);
+    for (const intent of data.intents) {
+        for (const pattern of intent.patterns) {
+            manager.addDocument("en", pattern, intent.tag);
+        }
+        for (const response of intent.responses) {
+            manager.addAnswer("en", intent.tag, response);
+        }
     }
 }
 // let's create a function that will be responsible for Training and saving the manager instance.
@@ -27,3 +28,5 @@ async function train_save(){
 }
 // Calling the above function
 train_save();
+
+export default manager;
