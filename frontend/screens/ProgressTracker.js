@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
+import styles from '../styles/StyleSheet';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function ProgressTracker() {
     const [daysSober, setDaysSober] = useState(0);
@@ -10,38 +12,45 @@ export default function ProgressTracker() {
         setDaysSober(daysSober + 1);
     }
 
+    const resetDaysSober = () => {
+        setDaysSober(0);
+    }
+
     const addMilestone = () => {
         setMilestones([...milestones, newMilestone]);
         setNewMilestone('');
     }
 
     return (
-        <View>
-            <Text>Days sober: {daysSober}</Text>
-            <Button
-                title="Increment days sober"
-                onPress={incrementDaysSober}
-            />
-            <Text>Milestones:</Text>
+        <View style={styles.container}>
+            <Text style={{ fontSize: 30 }}>Days sober: {daysSober}</Text>
+            <View style={{ flexDirection: "row" }}>
+                <Icon.Button
+                    name="plus-circle"
+                    color="black"
+                    backgroundColor="white"
+                    onPress={incrementDaysSober}
+                />
+                <Icon.Button
+                    name="remove"
+                    color="black"
+                    backgroundColor="white"
+                    onPress={resetDaysSober}
+                />
+            </View>
+            <Text style={{ fontSize: 30 }}>Milestones:</Text>
             {milestones.map((milestone) => (
-                <Text key={milestone}>- {milestone}</Text>
+                <Text key={milestone}>{milestone}</Text>
             ))}
             <TextInput
                 value={newMilestone}
                 onChangeText={(text) => setNewMilestone(text)}
-                placeholder="Enter new milestone"
+                placeholder="Type here to add a milestone"
+                style={[{ fontSize: 20 }, { fontSize: 20 }]}
             />
             <Button
                 title="Add milestone"
                 onPress={addMilestone}
-            />
-            <Button
-                title='Chat'
-                onPress={() => navigation.navigate('ChatScreen')}
-            />
-            <Button
-                title='Closest Clinics'
-                onPress={() => navigation.navigate('ClosestClinics')}
             />
         </View>
     );
