@@ -1,9 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { View } from 'react-native';
-import { Icon } from '@rneui/themed';
-import { Header } from 'react-native-elements';
 import { GiftedChat } from 'react-native-gifted-chat';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import controller from '../controller';
 import uuid from 'react-native-uuid';
 
