@@ -19,8 +19,6 @@ export default function ClosestClinics() {
     }
 
     async function getUserLocation() {
-      console.log(location);
-      console.log(locations);   
       if(!location) setIsLoading(true);
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== 'granted') {
