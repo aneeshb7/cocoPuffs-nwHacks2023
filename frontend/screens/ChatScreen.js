@@ -1,14 +1,11 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { View } from 'react-native';
-import { Icon } from '@rneui/themed';
-import { Header } from 'react-native-elements';
 import { GiftedChat } from 'react-native-gifted-chat';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import controller from '../controller';
 import uuid from 'react-native-uuid';
 
 
-export default function ChatScreen({navigation}) {
+export default function ChatScreen() {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
@@ -44,13 +41,6 @@ export default function ChatScreen({navigation}) {
 
     return (
         <View style={{flex: 1}}>
-            <Header
-                leftComponent={
-                    <TouchableOpacity onPress={() => {navigation.navigate('ClosestClinics')}}>
-                        <Icon type="simple-line-icon" name="arrow-left" color="white" onPress={() => {navigation.navigate('ClosestClinics')}}/>
-                    </TouchableOpacity>
-                }
-            />
             <GiftedChat
                 messages={messages}
                 onSend={messages => onSend(messages)}

@@ -35,6 +35,37 @@ const controller = {
         } catch(error) {
             console.error(error);
         }
+    },
+
+    getAllMilestones: async function(user) {
+        try {
+            const response = await fetch(`${url}/milestone/get-all?user=${user}`);
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error(error);
+        }
+    },
+
+    addMilestone: async function(user, milestone) {
+        try {
+            const response = await fetch(`${url}/milestone/add-milestone?user=${user}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(milestone)
+            });
+            
+            if (!response.ok) {
+                return response.text().then(text => { throw new Error(text) })
+            }
+
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error(error);
+        }
     }
 }
 
