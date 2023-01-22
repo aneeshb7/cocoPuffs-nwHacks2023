@@ -27,7 +27,6 @@ export default function ChatScreen({navigation}) {
     }, [])
 
     const onSend = useCallback((messages = []) => {
-        setBotCount(botCount + 1);
         controller.getChatBotResponse(messages[0].text).then((response) => {
             messages.unshift({
                 _id: uuid.v4(),
