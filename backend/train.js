@@ -28,3 +28,5 @@ async function train_save(){
 }
 // Calling the above function
 train_save();
+
+export default manager;

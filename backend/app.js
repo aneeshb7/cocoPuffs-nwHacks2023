@@ -3,6 +3,8 @@ import * as dotenv from "dotenv";
 import cors from 'cors';
 import mongoUtil from './db/mongoutil.js';
 import locationRouter from './routes/locations.js';
+import chatBotRouter from './routes/chatbot.js';
+import { NlpManager } from "node-nlp";
 
 dotenv.config();
 const app = express();
@@ -28,7 +30,9 @@ app.get('/ping', (req, res) => {
 });
 
 app.use('/locations', locationRouter)
-import { NlpManager } from "node-nlp";
+app.use('/chatbot', chatBotRouter)
+
+
 console.log("Starting Chatbot ...");
 const manager = new NlpManager({ languages: ["en"] });
 // Loading our saved model
@@ -36,7 +40,7 @@ manager.load();
 
 // Loading a module readline, this will be able to take input from the terminal.
 import readline from "readline";
-var rl = readline.createInterface(process.stdin, process.stdout);
+let rl = readline.createInterface(process.stdin, process.stdout);
 console.log("Chatbot started!");
 rl.setPrompt("> ");
 rl.prompt();
