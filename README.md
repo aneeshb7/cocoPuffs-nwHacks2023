@@ -19,4 +19,4 @@ Overall, this application serves as a powerful tool for individuals seeking help
 
 Screenshots:
 
-<img src="https://user-images.githubusercontent.com/63217634/213936966-fe2c9a2c-34dd-4b54-8964-067bdb9d7a95.jpg" alt="" width="500" height="500" />
+<img src="https://user-images.githubusercontent.com/63217634/213936966-fe2c9a2c-34dd-4b54-8964-067bdb9d7a95.jpg" alt="" width="200" height="200" />
