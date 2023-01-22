@@ -30,8 +30,8 @@ const controller = {
     getChatBotResponse: async function(input) {
         try {
             const response = await fetch(`${url}/chatbot/talk-to-bot?input=${input}`);
-            const json = await response.text();
-            return json;
+            const res = await response.text();
+            return res;
         } catch(error) {
             console.error(error);
         }

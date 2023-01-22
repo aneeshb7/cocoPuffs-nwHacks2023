@@ -10,7 +10,6 @@ import uuid from 'react-native-uuid';
 
 export default function ChatScreen({navigation}) {
     const [messages, setMessages] = useState([]);
-    const [botCount, setBotCount] = useState(1);
 
     useEffect(() => {
         setMessages([
