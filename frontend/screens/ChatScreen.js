@@ -44,13 +44,6 @@ export default function ChatScreen() {
 
     return (
         <View style={{flex: 1}}>
-            <Header
-                leftComponent={
-                    <TouchableOpacity onPress={() => {navigation.navigate('ClosestClinics')}}>
-                        <Icon type="simple-line-icon" name="arrow-left" color="white" onPress={() => {navigation.navigate('ClosestClinics')}}/>
-                    </TouchableOpacity>
-                }
-            />
             <GiftedChat
                 messages={messages}
                 onSend={messages => onSend(messages)}
