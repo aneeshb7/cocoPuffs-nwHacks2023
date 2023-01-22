@@ -18,7 +18,9 @@ export default function ClosestClinics() {
       setLocations(locations);
     }
 
-    async function getUserLocation() {   
+    async function getUserLocation() {
+      console.log(location);
+      console.log(locations);   
       if(!location) setIsLoading(true);
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== 'granted') {
@@ -40,7 +42,7 @@ export default function ClosestClinics() {
       <ActivityIndicator size="large" />
     </View>
   ) : (
-    <View containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0, flex: 1 }}>
+    <View style={{ borderTopWidth: 0, borderBottomWidth: 0, flex: 1 }}>
       <View style={{flexDirection: 'row', alignItems: 'center', paddingTop: 60}}>
         <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
         <View>
@@ -48,17 +50,19 @@ export default function ClosestClinics() {
         </View>
         <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
       </View>
-      <FlatList     
-        data={locations}          
-        renderItem={function({ item }) { 
-          return ( 
-            <List.Item              
-              title={item.name}  
-              description={item.address}
-              right={() => (<Text style={styles.distance}>{`${Math.round(item.distance)} km`}</Text>)}
-            />          
-        )}}                        
-      />
+      <View style={{flex: 1}}>
+        <FlatList     
+          data={locations}          
+          renderItem={function({ item }) { 
+            return ( 
+              <List.Item              
+                title={item.name}  
+                description={item.address}
+                right={() => (<Text style={styles.distance}>{`${Math.round(item.distance)} km`}</Text>)}
+              />          
+          )}}                        
+        />
+      </View>
     </View>
   )
 };

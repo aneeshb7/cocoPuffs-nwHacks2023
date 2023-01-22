@@ -9,20 +9,20 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 export default function App() {
 
   const ClosestClinicsRoute = () => <ClosestClinics/>;
-  const ProgressTrackerRoute = () => <ChatScreen/>;
-  const ChatScreenRout = () => <ProgressTracker/>;
+  const ChatScreenRoute = () => <ChatScreen/>;
+  const ProgressTrackerRoute = () => <ProgressTracker/>;
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: 'clincs', title: 'Clincs', focusedIcon: 'medical-bag'},
-    { key: 'milestones', title: 'Milestones', focusedIcon: 'progress-check' },
+    { key: 'milestones', title: 'Progress Tracker', focusedIcon: 'progress-check' },
     { key: 'chat', title: 'Chat Bot', focusedIcon: 'robot-happy-outline' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
     clincs: ClosestClinicsRoute,
     milestones: ProgressTrackerRoute,
-    chat: ChatScreenRout,
+    chat: ChatScreenRoute,
   });
 
   return (
