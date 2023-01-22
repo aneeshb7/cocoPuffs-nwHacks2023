@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
+import styles from '../styles/StyleSheet';
 
 export default function ProgressTracker({ navigation }) {
     const [daysSober, setDaysSober] = useState(0);
@@ -16,33 +17,39 @@ export default function ProgressTracker({ navigation }) {
     }
 
     return (
-        <View>
-            <Text>Days sober: {daysSober}</Text>
+        <View style={styles.container}>
+            <Text style={{ fontSize: 30 }}>Days sober: {daysSober}</Text>
             <Button
-                title="Increment days sober"
+                title="Increase number of days sober!"
                 onPress={incrementDaysSober}
             />
-            <Text>Milestones:</Text>
+            <Text style={{ fontSize: 30 }}>Milestones:</Text>
             {milestones.map((milestone) => (
-                <Text key={milestone}>- {milestone}</Text>
+                <Text key={milestone}>{milestone}</Text>
             ))}
             <TextInput
                 value={newMilestone}
                 onChangeText={(text) => setNewMilestone(text)}
-                placeholder="Enter new milestone"
+                placeholder="Type here to add a milestone"
+                style={[{ fontSize: 20 }, { fontSize: 20 }]}
             />
             <Button
                 title="Add milestone"
                 onPress={addMilestone}
+
             />
-            <Button
-                title='Chat'
-                onPress={() => navigation.navigate('ChatScreen')}
-            />
-            <Button
-                title='Closest Clinics'
-                onPress={() => navigation.navigate('ClosestClinics')}
-            />
+            <View>
+                <Button
+                    title='Chat'
+                    onPress={() => navigation.navigate('ChatScreen')}
+                    height={100}
+                />
+                <Button
+                    title='Closest Clinics'
+                    onPress={() => navigation.navigate('ClosestClinics')}
+                    height={110}
+                />
+            </View>
         </View>
     );
 }
