@@ -42,13 +42,13 @@ export default function App() {
 
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    { key: 'clincs', title: 'Clincs', focusedIcon: 'medical-bag'},
+    { key: 'clinics', title: 'Clinics', focusedIcon: 'medical-bag'},
     { key: 'milestones', title: 'Progress Tracker', focusedIcon: 'progress-check' },
     { key: 'chat', title: 'Chat Bot', focusedIcon: 'robot-happy-outline' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
-    clincs: ClosestClinicsRoute,
+    clinics: ClosestClinicsRoute,
     milestones: ProgressTrackerRoute,
     chat: ChatScreenRoute,
   });

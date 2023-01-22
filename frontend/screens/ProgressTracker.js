@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import styles from '../styles/StyleSheet';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function ProgressTracker() {
     const [daysSober, setDaysSober] = useState(0);
@@ -11,6 +12,10 @@ export default function ProgressTracker() {
         setDaysSober(daysSober + 1);
     }
 
+    const resetDaysSober = () => {
+        setDaysSober(0);
+    }
+
     const addMilestone = () => {
         setMilestones([...milestones, newMilestone]);
         setNewMilestone('');
@@ -19,10 +24,20 @@ export default function ProgressTracker() {
     return (
         <View style={styles.container}>
             <Text style={{ fontSize: 30 }}>Days sober: {daysSober}</Text>
-            <Button
-                title="Increase number of days sober!"
-                onPress={incrementDaysSober}
-            />
+            <View style={{ flexDirection: "row" }}>
+                <Icon.Button
+                    name="plus-circle"
+                    color="black"
+                    backgroundColor="white"
+                    onPress={incrementDaysSober}
+                />
+                <Icon.Button
+                    name="remove"
+                    color="black"
+                    backgroundColor="white"
+                    onPress={resetDaysSober}
+                />
+            </View>
             <Text style={{ fontSize: 30 }}>Milestones:</Text>
             {milestones.map((milestone) => (
                 <Text key={milestone}>{milestone}</Text>
@@ -36,20 +51,7 @@ export default function ProgressTracker() {
             <Button
                 title="Add milestone"
                 onPress={addMilestone}
-
             />
-            <View>
-                <Button
-                    title='Chat'
-                    onPress={() => navigation.navigate('ChatScreen')}
-                    height={100}
-                />
-                <Button
-                    title='Closest Clinics'
-                    onPress={() => navigation.navigate('ClosestClinics')}
-                    height={110}
-                />
-            </View>
         </View>
     );
 }
