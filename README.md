@@ -21,4 +21,4 @@ Screenshots:
 
 ![326944951_8630482913689465_4753630690771486791_n](https://user-images.githubusercontent.com/63217634/213936966-fe2c9a2c-34dd-4b54-8964-067bdb9d7a95.jpg)
 
-<img src="[http://....jpg](https://user-images.githubusercontent.com/63217634/213936966-fe2c9a2c-34dd-4b54-8964-067bdb9d7a95.jpg)" width="50" height="50" />
+<img src="[http://....jpg](https://user-images.githubusercontent.com/63217634/213936966-fe2c9a2c-34dd-4b54-8964-067bdb9d7a95.jpg)" width="10" height="10" />
