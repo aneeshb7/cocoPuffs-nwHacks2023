@@ -41,5 +41,15 @@ export default StyleSheet.create ({
     alignItems: 'center',
     alignContent: 'space-evenly',
     paddingTop: 150
+  },
+  subtext: {
+    fontSize: 10,
+    paddingTop: 5,
+    paddingBottom: 5
+  },
+  text: {
+    fontSize: 15,
+    fontWeight: '500',
+    paddingBottom: 3
   }
 })

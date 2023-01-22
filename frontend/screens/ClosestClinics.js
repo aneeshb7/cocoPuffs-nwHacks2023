@@ -24,9 +24,10 @@ export default function ClosestClinics(props) {
           renderItem={function({ item }) { 
             return ( 
               <List.Item              
-                title={item.name}  
-                description={item.address}
+                title={() => (<Text style={styles.text}>{item.name}</Text>)}  
+                description={() => (<View><Text style={styles.subtext}>{item.address}</Text><Text style={styles.subtext}>{item.number}</Text></View>)}
                 right={() => (<Text style={styles.distance}>{`${Math.round(item.distance)} km`}</Text>)}
+                style={{borderBottomWidth: 1, borderBottomColor: 'black'}}
               />          
           )}}                        
         />
