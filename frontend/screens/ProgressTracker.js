@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import styles from '../styles/StyleSheet';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function ProgressTracker({daysSober, setDaysSober, milestones, setMilestones, newMilestone, setNewMilestone}) {
+export default function ProgressTracker({ daysSober, setDaysSober, milestones, setMilestones, newMilestone, setNewMilestone }) {
     const incrementDaysSober = () => {
         setDaysSober(daysSober + 1);
     }
@@ -19,21 +19,24 @@ export default function ProgressTracker({daysSober, setDaysSober, milestones, se
 
     return (
         <View style={styles.container}>
-            <Text style={{ fontSize: 30 }}>Days sober: {daysSober}</Text>
-            <View style={{ flexDirection: "row" }}>
-                <Icon.Button
-                    name="plus-circle"
-                    color="black"
-                    backgroundColor="white"
-                    onPress={incrementDaysSober}
-                />
-                <Icon.Button
-                    name="remove"
-                    color="black"
-                    backgroundColor="white"
-                    onPress={resetDaysSober}
-                />
+            <View style = {styles.soberDaysTracker}>
+                <Text style={{ fontSize: 30 }}>Days sober: {daysSober}</Text>
+                <View style={{ flexDirection: "row" }}>
+                    <Icon.Button
+                        name="plus-circle"
+                        color="black"
+                        backgroundColor="white"
+                        onPress={incrementDaysSober}
+                    />
+                    <Icon.Button
+                        name="remove"
+                        color="black"
+                        backgroundColor="white"
+                        onPress={resetDaysSober}
+                    />
+                </View>
             </View>
+            <View style={styles.milestonesTracker}>
             <Text style={{ fontSize: 30 }}>Milestones:</Text>
             {milestones.map((milestone) => (
                 <Text key={milestone}>{milestone}</Text>
@@ -41,13 +44,14 @@ export default function ProgressTracker({daysSober, setDaysSober, milestones, se
             <TextInput
                 value={newMilestone}
                 onChangeText={(text) => setNewMilestone(text)}
-                placeholder="Type here to add a milestone"
+                placeholder="Add a milestone here!"
                 style={[{ fontSize: 20 }, { fontSize: 20 }]}
             />
             <Button
                 title="Add milestone"
                 onPress={addMilestone}
             />
+            </View>
         </View>
     );
 }
