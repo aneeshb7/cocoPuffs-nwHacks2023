@@ -24,3 +24,17 @@ Screenshots:
 <img src="https://user-images.githubusercontent.com/63217634/213937317-af9c8f1c-179e-4140-a846-c2f6c0b2fc66.jpg" alt="" width="200" height="450" />
 <img src="https://user-images.githubusercontent.com/63217634/213937316-043d542a-c9db-4519-96dc-7f4f4e5303ca.jpg" alt="" width="200" height="450" />
 <img src="https://user-images.githubusercontent.com/63217634/213937315-48bc6ad5-27e9-4609-863e-793d2b370ec7.jpg" alt="" width="200" height="450" />
+
+## Future Roadmap
+
+- [ ] Medication management
+  - Users can set reminders for taking their medication, track the quantity and refill their medication.
+- [ ] Daily reminders
+  - Users can set up daily reminders for taking medications, attending therapy sessions, and other recovery-related activities.
+- [ ] Support groups
+  - Users can join and participate in virtual support groups with other individuals in recovery. Users can share their stories and provide encouragement to one another.
+- [ ] Rewards system
+  - Users can be rewarded for their progress and milestones, this can be in terms of virtual badges, points or even real-world rewards.
+- [ ] Integration with wearable devices
+  - Users can integrate their wearables like smartwatches or fitness trackers to track their physical activity and sleep patterns which can be used to evaluate their overall health and well-being.
+  
