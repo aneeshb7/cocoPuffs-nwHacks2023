@@ -32,7 +32,7 @@ export default StyleSheet.create ({
     justifyContent: 'flex-start',
     alignItems: 'center',
     alignContent: 'space-evenly',
-    paddingBottom: 150
+    paddingTop: 150
   },
   milestonesTracker: {
     fontSize: 30,
@@ -40,7 +40,7 @@ export default StyleSheet.create ({
     justifyContent: 'flex-start',
     alignItems: 'center',
     alignContent: 'space-evenly',
-    paddingTop: 150
+    paddingBottom: 150
   },
   subtext: {
     fontSize: 10,
