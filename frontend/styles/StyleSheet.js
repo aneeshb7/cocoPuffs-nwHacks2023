@@ -51,5 +51,10 @@ export default StyleSheet.create ({
     fontSize: 15,
     fontWeight: '500',
     paddingBottom: 3
+  },
+  roundedButton: {
+    backgroundColor: "gray",
+    padding: 10,
+    borderRadius: 10,
   }
 })
