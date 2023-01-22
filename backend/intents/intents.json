@@ -1,0 +1,72 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Take care and feel free to reach out anytime!"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I am Max, your bot assistant", "I'm Max, an Artificial Intelligent bot designed to assist you with your concerns"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Max.", "I'm Max!", "Just call me Max"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "addiction",
+    "patterns": ["I think I am addicted to", "addiction", "I am addicted to", "I am struggling with addiction"],
+    "responses": ["There is no shame in struggling with addiction. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help.",
+    "Anyone can become addicted to drugs or alcohol. If you or someone you know is struggling with addiction, please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."]
+    },
+    {
+        "tag": "depression",
+        "patterns": ["I am depressed", "I am feeling depressed", "I am struggling with depression", "suicide", "kill myself"],
+        "responses": ["There is no shame in struggling with depression. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."]
+    },
+    {
+        "tag": "support",
+        "patterns": ["I need support", "I need someone to talk to", "I need someone to talk to"],
+        "responses": ["There is no shame in struggling. Anyone can be susceptible to suffering from addiction or other mental and physical health issues. Please visit http://www.vch.ca/your-care/mental-health-substance-use for more information on how to get help."]
+    }, 
+    {
+        "tag": "overdose",
+        "patterns": ["overdose", "My friend is overdosing", "what do I do in case of an overdose"],
+        "responses": ["If you or someone you know is overdosing, please call 911 immediately."]
+    },
+    {
+        "tag": "quit_substance",
+        "patterns": ["I want to quit smoking","I want to quit drinking","I want to quit using drugs"],
+        "responses": ["Quitting a substance can be difficult, but it is possible. Here are some resources that can help you:\n1. Nicotine Anonymous - www.nicotine-anonymous.org\n2. Alcoholics Anonymous - www.aa.org\n3. Narcotics Anonymous - www.na.org Remember that you are not alone, and there is help available."]
+    },
+    {
+        "tag": "relapse_prevention",
+        "patterns": ["I'm afraid of relapsing", "How can I prevent relapsing", "I want to learn about relapse prevention"],
+        "responses": ["Relapse is a common part of the recovery process. It's important to have a plan in place to prevent it. Here are some tips for preventing relapse:\n 1. Identify triggers and learn how to manage them\n2. Build a support system of friends and family\n3. Seek professional help if necessary\n4. Keep yourself accountable by sharing your recovery journey with others\n5. Remember to take care of yourself physically and emotionally\n6. Stay active in recovery groups and meetings"]
+    },
+    {
+        "tag": "mental_health",
+        "patterns": ["I'm struggling with my mental health", "I need help with my mental health", "I want to talk about my mental health"],
+        "responses": ["It's important to take care of your mental health. Here are some resources that can help:\n1. Mental Health Helpline - 1-877-303-2642\n2. Canadian Association for Suicide Prevention - www.suicideprevention.ca\n3. Canadian Mental Health Association - www.cmha.ca\n4. Mind Your Mind - www.mindyourmind.ca\nRemember that it's okay to ask for help and there are people who care and want to support you."]
+    },
+    {
+        "tag": "find_support_group",
+        "patterns": ["I'm looking for a support group", "Where can I find a support group", "I want to join a support group"],
+        "responses": ["Support groups can be a great way to connect with others going through similar struggles. Here are some resources to help you find a support group:\n1. Alcoholics Anonymous - www.aa.org\n2. Narcotics Anonymous - www.na.org\n3. Nicotine Anonymous - www.nicotine-anonymous.org\n4. SMART Recovery - www.smartrecovery.org\n5. Find a local support group - https://www.addictioncenter.com/treatment/support-groups/\nRemember that you are not alone, and there is help available."]
+    },
+    {
+        "tag": "coping_with_stress",
+        "patterns": ["I'm feeling stressed", "I need help coping with stress", "How can I deal with stress"],
+        "responses": ["Stress is a normal part of life, but it can be overwhelming at times. Here are some tips for coping with stress:\n1. Take a break and do something you enjoy\n2. Exercise or engage in physical activity\n3. Practice deep breathing or meditation\n4. Connect with friends and family\n5. Get enough sleep\n6. Seek professional help if necessary\nRemember that it's important to take care of yourself and there are resources available to help you."]
+    }
+]
+}
