@@ -32,7 +32,6 @@ app.get('/ping', (req, res) => {
 app.use('/locations', locationRouter)
 app.use('/chatbot', chatBotRouter)
 
-
 console.log("Starting Chatbot ...");
 const manager = new NlpManager({ languages: ["en"] });
 // Loading our saved model
