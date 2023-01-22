@@ -1,20 +1,21 @@
-import fetch from 'node-fetch';
-
-const url = "http://localhost:8080"
-
-getAllLocations = async function() {
-    const response = await fetch(url + '/locations/get-all');
-    const locations = await response.json();
-    return locations;
+const controller = {
+    getAllLocations: async function() {
+        try {
+            const response = await fetch(
+                `http://10.19.129.45:3000/locations/get-all`,
+            );
+            const json = await response.json();
+            return json;
+        } catch (error) {
+            console.error(error);
+        }
+    },
+    
+    getLocationsByCoordinates: async function(coordinates, radius) {
+        const response = await fetch(url + '/locations/coordinates?userCoordinates=' + coordinates + '&locationRadius=' + radius);
+        const locations = await response.json();
+        return locations;
+    }
 }
 
-getLocationsByCoordinates = async function(coordinates, radius) {
-    const response = await fetch(url + '/locations/coordinates?userCoordinates=' + coordinates + '&locationRadius=' + radius);
-    const locations = await response.json();
-    return locations;
-}
-
-export default {
-    getAllLocations, 
-    getLocationsByCoordinates
-}
+export default controller
