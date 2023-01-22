@@ -4,6 +4,7 @@ import cors from 'cors';
 import mongoUtil from './db/mongoutil.js';
 import locationRouter from './routes/locations.js';
 import chatBotRouter from './routes/chatbot.js';
+import milestoneRouter from './routes/milestone.js';
 import { NlpManager } from "node-nlp";
 
 dotenv.config();
@@ -29,8 +30,9 @@ app.get('/ping', (req, res) => {
     res.send('pong');
 });
 
-app.use('/locations', locationRouter)
-app.use('/chatbot', chatBotRouter)
+app.use('/locations', locationRouter);
+app.use('/chatbot', chatBotRouter);
+app.use('/milestone', milestoneRouter);
 
 console.log("Starting Chatbot ...");
 const manager = new NlpManager({ languages: ["en"] });
