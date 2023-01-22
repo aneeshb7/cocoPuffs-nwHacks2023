@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import {ActivityIndicator, FlatList, Text, View, Button} from 'react-native';
+import {ActivityIndicator, Button, FlatList, View, Text} from 'react-native';
+import { ListItem, SearchBar } from 'react-native-elements';
+import { List } from 'react-native-paper';
 import styles from '../styles/StyleSheet';
 import controller from '../controller.js';
 import * as Location from 'expo-location';
@@ -38,13 +40,21 @@ export default function ClosestClinics({navigation}) {
       <ActivityIndicator size="large" />
     </View>
   ) : (
-    <View style={styles.container}>
-      <FlatList
-        data={locations}
-        renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>}
+    <View containerStyle={{ borderTopWidth: 0, borderBottomWidth: 0, flex: 1 }}>
+      <Text style={styles.title}>Clinics Near Me</Text>
+      <FlatList     
+        data={locations}          
+        renderItem={function({ item }) { 
+          return ( 
+            <List.Item              
+              title={item.name}  
+              description={item.address}
+              right={() => (<Text style={styles.distance}>{`${Math.round(item.distance)} km`}</Text>)}
+            />          
+        )}}                        
       />
       <Button
-        title='Chat'
+        title="Chat"
         onPress={() => navigation.navigate('ChatScreen')}
       />
       <Button
@@ -54,4 +64,3 @@ export default function ClosestClinics({navigation}) {
     </View>
   )
 };
-

@@ -18,4 +18,14 @@ export default StyleSheet.create ({
     fontSize: 18,
     height: 44,
   },
-  })
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 60,
+    marginBottom: 10,
+  },
+  distance: {
+    paddingTop: 10,
+  }
+})

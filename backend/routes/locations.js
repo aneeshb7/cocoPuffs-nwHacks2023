@@ -42,7 +42,9 @@ locationRouter.get('/distance-from-location', async (req, res) => {
         };
     });
 
-    res.send(response);
+    const sortedByDistance = response.sort((a, b) => a.distance - b.distance);
+
+    res.send(sortedByDistance);
 });
 
 locationRouter.get('/coordinates', async (req, res) => {
