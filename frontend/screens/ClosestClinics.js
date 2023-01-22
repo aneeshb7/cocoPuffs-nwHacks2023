@@ -1,44 +1,48 @@
 import React, { useEffect, useState } from 'react';
-import {FlatList, Text, View, Button} from 'react-native';
+import {ActivityIndicator, FlatList, Text, View, Button} from 'react-native';
 import styles from '../styles/StyleSheet';
 import controller from '../controller.js';
 import * as Location from 'expo-location';
 
-export default function ClosestClinics() {
+export default function ClosestClinics({navigation}) {
 
   const [locations, setLocations] = useState([]);
   const [location, setLocation] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    async function fetchData() {
-      const locations = await controller.getAllLocations();
+    async function fetchData(coordinates) {
+      const locations = await controller.getLocationWithDistance(coordinates);
       setLocations(locations);
     }
 
-    async function getUserLocation() {
-      
+    async function getUserLocation() {   
+      if(!location) setIsLoading(true);
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== 'granted') {
-        setErrorMsg('Permission to access location was denied');
+        console.error('Permission to access location was denied');
         return;
       }
 
-      let location = await Location.getCurrentPositionAsync({});
-      console.log(location);
-      setLocation(JSON.stringify(location));
+      let userLocation = await Location.getCurrentPositionAsync({});
+      setLocation(JSON.stringify(userLocation));
+      fetchData({latitude: userLocation.coords.latitude, longitude: userLocation.coords.longitude});
+      setIsLoading(false);
     }
 
-    fetchData();
     getUserLocation();
   }, []);
 
-  return (
+  return isLoading ? (
+    <View style={styles.container}>
+      <ActivityIndicator size="large" />
+    </View>
+  ) : (
     <View style={styles.container}>
       <FlatList
         data={locations}
         renderItem={({item}) => <Text style={styles.item}>{item.name}</Text>}
       />
-      <Text style={styles.paragraph}>{location}</Text>
       <Button
         title='Chat'
         onPress={() => navigation.navigate('ChatScreen')}
