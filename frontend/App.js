@@ -15,7 +15,6 @@ export default function App() {
 
   const [daysSober, setDaysSober] = useState(0);
   const [milestones, setMilestones] = useState([]);
-  const [newMilestone, setNewMilestone] = useState('');
 
   useEffect(() => {
     async function fetchData(coordinates) {
@@ -47,8 +46,6 @@ export default function App() {
                                         setDaysSober={setDaysSober} 
                                         milestones={milestones} 
                                         setMilestones={setMilestones} 
-                                        newMilestone={newMilestone} 
-                                        setNewMilestone={setNewMilestone}
                                       />;
 
   const [index, setIndex] = React.useState(0);

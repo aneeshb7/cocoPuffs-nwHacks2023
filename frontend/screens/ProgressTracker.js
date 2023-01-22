@@ -3,7 +3,9 @@ import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import styles from '../styles/StyleSheet';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function ProgressTracker({ daysSober, setDaysSober, milestones, setMilestones, newMilestone, setNewMilestone }) {
+export default function ProgressTracker({ daysSober, setDaysSober, milestones, setMilestones }) {
+    const [inputText, setInputText] = useState('');
+    
     const incrementDaysSober = () => {
         setDaysSober(daysSober + 1);
     }
@@ -13,8 +15,8 @@ export default function ProgressTracker({ daysSober, setDaysSober, milestones, s
     }
 
     const addMilestone = () => {
-        setMilestones([...milestones, newMilestone]);
-        setNewMilestone('');
+        setMilestones([...milestones, inputText]);
+        setInputText('');
     }
 
     return (
@@ -42,8 +44,8 @@ export default function ProgressTracker({ daysSober, setDaysSober, milestones, s
                 <Text key={milestone}>{milestone}</Text>
             ))}
             <TextInput
-                value={newMilestone}
-                onChangeText={(text) => setNewMilestone(text)}
+                value={inputText}
+                onChangeText={(text) => setInputText(text)}
                 placeholder="Add a milestone here!"
                 style={[{ fontSize: 20 }, { fontSize: 20 }]}
             />
